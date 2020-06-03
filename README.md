@@ -3,7 +3,7 @@
 
 This is a template focused on helping people spin up selfhosted services using Portainer.
 
-*for the OMV5 version use the OMV5 branch*
+*for the portainer version use the master branch*
 
 ### Prerequisites
 
