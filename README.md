@@ -7,8 +7,18 @@ This is a template focused on helping people spin up selfhosted services using P
 
 ### Prerequisites
 
-1. A server/NAS with docker installed
-2. A Portainer setup.
+1. A Server running OMV (Not 100% required but folders will be created in /srv/dev-disk-by-label-media if not installed)
+2. The following folders:
+  * Files (required)
+  * Downloads
+  * TV
+  * Movies
+  * Music
+  * Books
+  * Comics
+  * Podcasts
+3. Portainer installed and setup.
+
 
 *Want something we don't have? Make an issue and we'll work on adding it*
 
@@ -19,7 +29,7 @@ This is a template focused on helping people spin up selfhosted services using P
 3. Add the url: `https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/OMV5/Template/template.json` then go to app templates and hit refresh at the top.
 
 ### Information
-All templates are already configured to bind mount to various places on your drive. This branch works without the need for OMV. The following folders are all created in /portainer/
+All templates are already configured to bind mount to various places on your drive. The following folders are all created in /srv/dev-disk-by-label-media/
 
 * **Files** - General file storage.
   * **AppData** - Subfolder where application data (unrelated to served data) is stored.
