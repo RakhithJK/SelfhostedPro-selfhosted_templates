@@ -19,7 +19,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Guacamole"
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Guacamole"
       }
     ]
   },
@@ -46,11 +46,11 @@
     "volumes": [
       {
         "container": "/etc/pihole",
-        "bind": "/portainer/Files/AppData/Config/PiHole"
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/PiHole"
       },
       {
         "container": "/etc/dnsmasq.d",
-        "bind": "/portainer/Files/AppData/Config/PiHole/DNS"
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/PiHole/DNS"
       }
     ]
   },
@@ -73,7 +73,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Whoogle"
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Whoogle"
       }
     ]
   },
@@ -96,11 +96,11 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/FileBrowser"
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/FileBrowser"
       },
       {
         "container": "/myfiles",
-        "bind": "/portainer/Files/AppData/Config"
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config"
       }
     ],
     "note": "Default username and password is admin/admin. The default file directory allows you to browse your Docker config files but feel free to change that."
@@ -330,7 +330,7 @@
     "volumes": [
       {
         "container": "/data",
-        "bind": "/portainer/Downloads"
+        "bind": "/srv/dev-disk-by-label-media/Downloads"
       },
       {
         "container": "/etc/localtime",
@@ -390,19 +390,24 @@
     ],
     "volumes": [
       {
-        "container": "/music"
+        "container": "/music",
+        "bind": "/srv/dev-disk-by-label-media/Music"
       },
       {
-        "container": "/playlists"
+        "container": "/playlists",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Airsonic/Playlists"
       },
       {
-        "container": "/podcasts"
+        "container": "/podcasts",
+        "bind": "/srv/dev-disk-by-label-media/Podcasts"
       },
       {
-        "container": "/media"
+        "container": "/media",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Airsonic/Media"
       },
       {
-        "container": "/config"
+        "container": "/config",
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Airsonic"
       }
     ],
     "env": [
