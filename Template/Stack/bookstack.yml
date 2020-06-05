@@ -12,7 +12,7 @@ services:
       - DB_PASS=${DATABASE_PASSWORD}
       - DB_DATABASE=bookstackapp
     volumes:
-      - /portainer/Files/AppData/Bookstack/Data:/config
+      - /srv/dev-disk-by-label-media/Files/AppData/Bookstack/Data:/config
     ports:
       - ${PORT}:80
     restart: unless-stopped
@@ -25,10 +25,10 @@ services:
       - PUID=${PUID}
       - PGID=${PGID}
       - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
-      - TZ=${Timezone}
+      - TZ=${TZ}
       - MYSQL_DATABASE=bookstackapp
       - MYSQL_USER=bookstack
       - MYSQL_PASSWORD=${DATABASE_PASSWORD}
     volumes:
-      - /portainer/Files/AppData/Bookstack/DB:/config
+      - /srv/dev-disk-by-label-media/Files/AppData/Bookstack/DB:/config
     restart: unless-stopped
