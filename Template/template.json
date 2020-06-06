@@ -333,13 +333,13 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1026",
+        "default": "root",
         "preset": true
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100",
+        "default": "root",
         "preset": true
       }
     ]
