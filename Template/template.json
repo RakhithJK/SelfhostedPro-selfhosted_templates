@@ -21,6 +21,20 @@
         "container": "/config",
         "bind": "/volume1/docker/Guacamole"
       }
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "1026",
+        "preset": true
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "100",
+        "preset": true
+      }
     ]
   },
   {
