@@ -19,7 +19,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/volume1/docker/Guacamole"
+        "bind": "/volume1/docker/Guacamole1"
       }
     ],
     "env": [
