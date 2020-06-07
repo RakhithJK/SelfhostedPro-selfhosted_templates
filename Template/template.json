@@ -43,7 +43,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Bitwarden-rs"
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Bitwarden-rs"
       }
     ]
   },
