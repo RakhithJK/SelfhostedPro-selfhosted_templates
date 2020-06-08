@@ -25,6 +25,34 @@
   },
   {
     "type": 1,
+    "title": "Homer",
+    "name": "Homer",
+    "description": "A dead simple static HOMepage for your servER to keep your s ervices on hand, from a simple yaml configuration file.",
+    "note": "This container requires a yml file within the config volume. See the documentation here https://github.com/bastienwirtz/homer",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/homer.png",
+    "image": "b4bz/homer:latest",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "8902:8080/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/www/assets",
+        "bind": "/portainer/Files/AppData/Config/Homer/assets"
+      },
+      {
+        "container": "/www/config.yml",
+        "bind": "/portainer/Files/AppData/Config/Homer"
+      }
+    ]
+  },
+  {
+    "type": 1,
     "title": "Jellyfin",
     "name": "Jellyfin",
     "description": "Jellyfin is a Free Software Media System that puts you in control of managing and streaming your media. It is an alternative to the proprietary Emby and Plex, to provide media from a dedicated server to end-user devices via multiple apps.",
@@ -55,24 +83,24 @@
         "bind": "/portainer/Movies"
       }
     ],
-      "env": [
-        {
-          "name": "PUID",
-          "label": "PUID",
-          "default": "1000",
-          "preset": true
-        },
-        {
-          "name": "PGID",
-          "label": "PGID",
-          "default": "100",
-          "preset": true
-        },
-        {
-          "name": "TZ",
-          "label": "TZ"
-        }
-      ]
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "1000",
+        "preset": true
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "100",
+        "preset": true
+      },
+      {
+        "name": "TZ",
+        "label": "TZ"
+      }
+    ]
   },
   {
     "type": 1,
@@ -296,7 +324,7 @@
     "type": 1,
     "title": "LibreSpeed",
     "name": "LibreSpeed",
-    "description": "Another application bookmark dashboard, with fun features.",
+    "description": "A Free and Open Source Speedtest for HTML5 and more.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/speedtest.png",
     "image": "linuxserver/librespeed:latest",
     "categories": [
@@ -407,6 +435,37 @@
   },
   {
     "type": 1,
+    "title": "Authelia",
+    "name": "Authelia",
+    "description": "An open-source authentication and authorization server providing 2-factor authentication and single sign-on (SSO) for your applications via a web portal.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/authelia.png",
+    "image": "authelia/authelia:latest",
+    "note": "Requires a configuration.yml file in order to work. Documentation is Available <a href='https://docs.authelia.com/deployment/deployment-ha'>here</a>.",
+    "categories": [
+      "Other",
+      "Tools",
+      "Authentication"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "9091:9091/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/etc/authelia/",
+        "bind": "/portainer/Files/AppData/Config/Authelia"
+      }
+    ],
+    "env": [
+      {
+        "name": "TZ",
+        "label": "TZ"
+      }
+    ]
+  },
+  {
+    "type": 1,
     "title": "TiddlyWiki",
     "name": "TiddlyWiki",
     "description": "A unique, non-linear notebook wiki.",
@@ -511,6 +570,61 @@
         "name": "LOCAL_NETWORK",
         "label": "LOCAL_NETWORK",
         "default": "192.168.0.0/24"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "Murmur",
+    "name": "murmur",
+    "description": "Mumble is a voicechat program for gamers written on top of Qt and Opus. Murmur is the server backend for Mumble.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/Mumble-logo.png",
+    "image": "goofball222/murmur:latest",
+    "categories": [
+      "Other",
+      "Voice",
+      "Chat"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "64738:64738/tcp",
+      "64738:64738/udp"
+    ],
+    "volumes": [
+      {
+        "container": "/etc/localtime",
+        "bind": "/etc/localtime:ro"
+      },
+      {
+        "container": "/opt/murmur/config",
+        "bind": "/portainer/Files/Config/Murmur"
+      },
+      {
+        "container": "/opt/murmur/data",
+        "bind": "/portainer/Files/Murmur/data"
+      },
+      {
+        "container": "/opt/murmur/log",
+        "bind": "/portainer/Files/Murmur/log"
+      }
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "1000",
+        "preset": true
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "100",
+        "preset": true
+      },
+      {
+        "name": "TZ",
+        "label": "TZ"
       }
     ]
   },
@@ -3136,7 +3250,7 @@
     "name": "tt-rss",
     "description": "Tiny Tiny RSS is an open source web-based news feed (RSS/Atom) reader and aggregator, designed to allow you to read news from any location, while feeling as close to a real desktop application as possible.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/tt-rss-icon.png",
-    "image": "linuxserver/tt-rss:latest",
+    "image": "lunik1/tt-rss:latest",
     "categories": [
       "Other"
     ],
