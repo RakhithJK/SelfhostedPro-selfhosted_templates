@@ -72,15 +72,15 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Emby"
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Emby"
       },
       {
         "container": "/data/tvshows",
-        "bind": "/portainer/TV"
+        "bind": "/srv/dev-disk-by-label-media/TV"
       },
       {
         "container": "/data/movies",
-        "bind": "/portainer/Movies"
+        "bind": "/srv/dev-disk-by-label-media/Movies"
       }
     ],
     "env": [
