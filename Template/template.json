@@ -43,11 +43,11 @@
     "volumes": [
       {
         "container": "/www/assets",
-        "bind": "/portainer/Files/AppData/Config/Homer/assets"
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Homer/assets"
       },
       {
         "container": "/www/config.yml",
-        "bind": "/portainer/Files/AppData/Config/Homer"
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Homer"
       }
     ]
   },
@@ -72,15 +72,15 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Jelllyfin"
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Jelllyfin"
       },
       {
         "container": "/data/tvshows",
-        "bind": "/portainer/TV"
+        "bind": "/srv/dev-disk-by-label-media/TV"
       },
       {
         "container": "/data/movies",
-        "bind": "/portainer/Movies"
+        "bind": "/srv/dev-disk-by-label-media/Movies"
       }
     ],
     "env": [
@@ -454,7 +454,7 @@
     "volumes": [
       {
         "container": "/etc/authelia/",
-        "bind": "/portainer/Files/AppData/Config/Authelia"
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Authelia"
       }
     ],
     "env": [
@@ -598,15 +598,15 @@
       },
       {
         "container": "/opt/murmur/config",
-        "bind": "/portainer/Files/Config/Murmur"
+        "bind": "/srv/dev-disk-by-label-media/Files/Config/Murmur"
       },
       {
         "container": "/opt/murmur/data",
-        "bind": "/portainer/Files/Murmur/data"
+        "bind": "/srv/dev-disk-by-label-media/Files/Murmur/data"
       },
       {
         "container": "/opt/murmur/log",
-        "bind": "/portainer/Files/Murmur/log"
+        "bind": "/srv/dev-disk-by-label-media/Files/Murmur/log"
       }
     ],
     "env": [
