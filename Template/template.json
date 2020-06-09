@@ -43,7 +43,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Chowdown"
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Chowdown"
       }
     ]
   },
@@ -69,13 +69,8 @@
         "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Wikijs"
       },
       {
-<<<<<<< HEAD
-      "container": "/data",
-      "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Wikijs/data"
-=======
         "container": "/data",
-        "bind": "/portainer/Files/AppData/Config/Wikijs/data"
->>>>>>> 8a9cf548ade180b50973c8a1053d61eb856d2eda
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Wikijs/data"
       }
     ]
   },
@@ -149,15 +144,15 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Bazarr"
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Bazarr"
       },
       {
         "container": "/tv",
-        "bind": "/portainer/TV"
+        "bind": "/srv/dev-disk-by-label-media/TV"
       },
       {
         "container": "/movies",
-        "bind": "/portainer/Movies"
+        "bind": "/srv/dev-disk-by-label-media/Movies"
       }
     ],
     "env": [
@@ -1843,66 +1838,6 @@
   },
   {
     "type": 1,
-<<<<<<< HEAD
-    "title": "libresonic",
-    "name": "libresonic",
-    "description": "Libresonic is a free, web-based media streamer, providing ubiqutious access to your music. Use it to share your music with friends, or to listen to your own music while at work. You can stream to multiple players simultaneously, for instance to one player in your kitchen and another in your living room.\r\n\r\n/music - Location of music.\r\n/media - Location of other media.\r\n/podcasts - Location of podcasts.\r\n/playlists - Location for playlists storage.\r\nCONTEXT_PATH for setting url-base in reverse proxy setups - (optional)\r\n\r\nDefault user/pass is admin/admin",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/libresonic.png",
-    "image": "linuxserver/libresonic:latest",
-    "categories": [
-      "Music"
-    ],
-    "platform": "linux",
-    "restart_policy": "unless-stopped",
-    "ports": [
-      "4040/tcp"
-    ],
-    "volumes": [
-      {
-        "container": "/music",
-        "bind": "/srv/dev-disk-by-label-media/Music"
-      },
-      {
-        "container": "/playlists",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Libresonic/Playlists"
-      },
-      {
-        "container": "/podcasts",
-        "bind": "/srv/dev-disk-by-label-media/Podcasts"
-      },
-      {
-        "container": "/media",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Libresonic/Media"
-      },
-      {
-        "container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Libresonic"
-      }
-    ],
-    "env": [
-      {
-        "name": "CONTEXT_PATH",
-        "label": "CONTEXT_PATH",
-        "set": ""
-      },
-      {
-        "name": "PUID",
-        "label": "PUID",
-        "default": "1000",
-        "preset": true
-      },
-      {
-        "name": "PGID",
-        "label": "PGID",
-        "default": "100",
-        "preset": true
-      }
-    ]
-  },
-  {
-    "type": 1,
-=======
->>>>>>> 8a9cf548ade180b50973c8a1053d61eb856d2eda
     "title": "lidarr",
     "name": "lidarr",
     "description": "Lidarr is a music collection manager for Usenet and BitTorrent users.",
@@ -2314,55 +2249,7 @@
   },
   {
     "type": 1,
-<<<<<<< HEAD
-    "title": "nextcloud",
-    "name": "nextcloud",
-    "description": "Nextcloud is an open source, self-hosted file sync and communication app platform. Access and sync your files, contacts, calendars and communicate and collaborate across your devices. You decide what happens with your data, where it is and who can access it!",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/nextcloud-icon.png",
-    "image": "linuxserver/nextcloud:latest",
-    "categories": [
-      "Cloud",
-      "Productivity",
-      "Tools",
-      "Other",
-      "Web"
-    ],
-    "platform": "linux",
-    "restart_policy": "unless-stopped",
-    "ports": [
-      "443/tcp"
-    ],
-    "volumes": [
-      {
-        "container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Nextcloud"
-      },
-      {
-        "container": "/data",
-        "bind": "/srv/dev-disk-by-label-media/Files/Nextcloud-data"
-      }
-    ],
-    "env": [
-      {
-        "name": "PUID",
-        "label": "PUID",
-        "default": "1000",
-        "preset": true
-      },
-      {
-        "name": "PGID",
-        "label": "PGID",
-        "default": "100",
-        "preset": true
-      }
-    ]
-  },
-  {
-    "type": 1,
-    "title": "nginx",
-=======
     "title": "Nginx",
->>>>>>> 8a9cf548ade180b50973c8a1053d61eb856d2eda
     "name": "nginx",
     "description": "Nginx is a web server with a strong focus on high concurrency, performance and low memory usage. It can also act as a reverse proxy server for HTTP, HTTPS, SMTP, POP3, and IMAP protocols, as well as a load balancer and an HTTP cache.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/nginx-icon.png",
@@ -3128,11 +3015,7 @@
     "volumes": [
       {
         "container": "/config",
-<<<<<<< HEAD
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/SickRage"
-=======
-        "bind": "/portainer/Files/AppData/Config/SickChill"
->>>>>>> 8a9cf548ade180b50973c8a1053d61eb856d2eda
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/SickChill"
       },
       {
         "container": "/downloads",
@@ -3768,15 +3651,15 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/SickGear"
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/SickGear"
       },
       {
         "container": "/tv",
-        "bind": "/portainer/TV"
+        "bind": "/srv/dev-disk-by-label-media/TV"
       },
       {
         "container": "/downloads",
-        "bind": "/portainer/Downloads"
+        "bind": "/srv/dev-disk-by-label-media/Downloads"
       }
     ],
     "env": [
