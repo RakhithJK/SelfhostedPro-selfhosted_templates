@@ -1089,7 +1089,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Grocy"
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Grocy"
       }
     ],
     "env": [
