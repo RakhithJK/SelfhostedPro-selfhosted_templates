@@ -266,7 +266,7 @@
     "platform": "linux",
     "repository": {
       "url": "https://github.com/SelfhostedPro/selfhosted_templates",
-      "stackfile": "Template/Stack/bookstack.yml"
+      "stackfile": "Template/Stack/OMV5/bookstack.yml"
     },
     "env": [
       {
@@ -2025,7 +2025,7 @@
     "platform": "linux",
     "repository": {
       "url": "https://github.com/SelfhostedPro/selfhosted_templates",
-      "stackfile": "Template/Stack/nextcloud.yml"
+      "stackfile": "Template/Stack/OMV5/nextcloud.yml"
     },
     "env": [
       {
@@ -2549,7 +2549,7 @@
     "volumes": [
       {
         "container": "/root",
-        "bind": "/portainer/Files/AppData/ProtonMail-Bridge"
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/ProtonMail-Bridge"
       }
     ]
   },
