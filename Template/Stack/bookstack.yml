@@ -30,5 +30,5 @@ services:
       - MYSQL_USER=bookstack
       - MYSQL_PASSWORD=${DATABASE_PASSWORD}
     volumes:
-      - /portainer/Files/AppData/Bookstack/DB:/config
+      - /srv/dev-disk-by-label-media/Files/AppData/Bookstack/DB:/config
     restart: unless-stopped
