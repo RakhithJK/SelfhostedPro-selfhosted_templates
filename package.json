@@ -9,7 +9,7 @@
   },
   "scripts": {
     "pretest": "jsonlint Template/template.json --quiet",
-    "test": "yaml-validator Template/Stack/*"
+    "test": "yaml-validator Template/Stack/OMV5/*"
   },
   "repository": {
     "type": "git",
