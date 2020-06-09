@@ -17,24 +17,24 @@
     "volumes": [
       {
         "container": "/music",
-        "bind": "/portainer/Music"
+        "bind": "/srv/dev-disk-by-label-media/Music"
 
       },
       {
         "container": "/playlists",
-        "bind": "/portainer/Files/AppData/Airsonic/Playlists"
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Airsonic/Playlists"
       },
       {
         "container": "/podcasts",
-        "bind": "/portainer/Podcasts"
+        "bind": "/srv/dev-disk-by-label-media/Podcasts"
       },
       {
         "container": "/media",
-        "bind": "/portainer/Files/AppData/Airsonic/Media"
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Airsonic/Media"
       },
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Airsonic/"
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Airsonic/"
       }
     ],
     "env": [
