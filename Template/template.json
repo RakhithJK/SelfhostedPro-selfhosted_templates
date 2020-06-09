@@ -691,7 +691,7 @@
     "name": "deemix",
     "description": "Deemix is a deezer downloader built from the ashes of Deezloader Remix.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/deemix.png",
-    "image": "bocki/deemix:latest",
+    "image": "registry.gitlab.com/bockiii/deemix-docker",
     "categories": [
       "Other",
       "Music"
@@ -1502,8 +1502,13 @@
         "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Lychee"
       },
       {
+<<<<<<< HEAD
         "container": "/config",
         "bind": "/srv/dev-disk-by-label-media/Pictures"
+=======
+        "container": "/pictures",
+        "bind": "/portainer/Pictures"
+>>>>>>> d49214d76de6d630ae3e57b52dc5d0be3cc841dc
       }
     ],
     "env": [
@@ -2013,7 +2018,7 @@
     "title": "Nextcloud",
     "name": "nextcloud",
     "description": "Where are your photos and documents? With Nextcloud you pick a server of your choice, at home, in a data center or at a provider. And that is where your files will be. Nextcloud runs on that server, protecting your data and giving you access from your desktop or mobile devices.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bookstack2.png",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/nextcloud-icon.png",
     "categories": [
       "Cloud",
       "Productivity",
@@ -2541,7 +2546,6 @@
     ],
     "platform": "linux",
     "restart_policy": "unless-stopped",
-    "interactive" : "true",
     "ports": [
       "143/tcp",
       "25/tcp"
