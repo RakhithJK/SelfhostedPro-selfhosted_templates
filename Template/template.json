@@ -42,21 +42,12 @@
     ],
     "volumes": [
       {
-<<<<<<< HEAD
-        "container": "/www/assets",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Homer/assets"
-      },
-      {
-        "container": "/www/config.yml",
-        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Homer"
-=======
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Wikijs"
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Wikijs"
       },
       {
       "container": "/data",
-      "bind": "/portainer/Files/AppData/Config/Wikijs/data"
->>>>>>> d01c2cdcff51d15541c9177c579c60cc8a6698be
+      "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Wikijs/data"
       }
     ]
   },
@@ -709,11 +700,11 @@
     "volumes": [
       {
         "container": "/www/assets",
-        "bind": "/portainer/Files/AppData/Config/Homer/assets"
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Homer/assets"
       },
       {
         "container": "/www/config.yml",
-        "bind": "/portainer/Files/AppData/Config/Homer"
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Homer"
       }
     ]
   },
