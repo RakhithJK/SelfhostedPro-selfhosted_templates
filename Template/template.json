@@ -1502,13 +1502,8 @@
         "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Lychee"
       },
       {
-<<<<<<< HEAD
-        "container": "/config",
-        "bind": "/srv/dev-disk-by-label-media/Pictures"
-=======
         "container": "/pictures",
-        "bind": "/portainer/Pictures"
->>>>>>> d49214d76de6d630ae3e57b52dc5d0be3cc841dc
+        "bind": "/srv/dev-disk-by-label-media/Pictures"
       }
     ],
     "env": [
