@@ -2852,7 +2852,7 @@
     "volumes": [
       {
         "container": "/srv/shiori",
-        "bind": "/portainer/Files/AppData/Config/Shiori"
+        "bind": "/srv/dev-disk-by-label-media/Files/AppData/Config/Shiori"
       }
     ]
   },
