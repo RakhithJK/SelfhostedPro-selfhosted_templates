@@ -45,6 +45,8 @@ All templates are already configured to bind mount to various places on your dri
 
 - Guacamole
 - Homer
+- Wikijs
+- Bazarr
 - Jellyfin
 - Bitwarden_rs
 - Pi-Hole
@@ -116,7 +118,7 @@ All templates are already configured to bind mount to various places on your dri
 - resilio-sync
 - rutorrent
 - sabnzbd
-- sickrage
+- sickchill
 - smokeping
 - sonarr
 - syncthing
