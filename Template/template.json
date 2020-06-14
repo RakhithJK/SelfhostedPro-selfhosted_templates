@@ -77,7 +77,7 @@
     ],
     "volumes": [
       {
-        "container": "/app/data/state/config",
+        "container": "/app/data",
         "bind": "/portainer/Files/AppData/Config/Filestash"
       }
     ],
