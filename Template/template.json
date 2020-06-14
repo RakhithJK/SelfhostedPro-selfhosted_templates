@@ -18,7 +18,6 @@
       {
         "container": "/music",
         "bind": "/portainer/Music"
-
       },
       {
         "container": "/playlists",
@@ -59,6 +58,30 @@
         "set": "-Xms256m -Xmx512m"
       }
     ]
+  },
+  {
+    "type": 1,
+    "title": "Filestash",
+    "name": "Filestash",
+    "description": "Filestash is web application that's used as a file manager to manage your data using: FTP • FTPS • SFTP • WebDAV • Git • S3 • LDAP • Mysql • CardDAV • CalDAV • Backblaze B2 • Minio • Dropbox • Google Drive.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/filestash.png",
+    "image": "machines/filestash:latest",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "8334:8334/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/app/data/state",
+        "bind": "/portainer/Files/AppData/Config/Filestash"
+      }
+    ],
+    "note": "Access the ui at your-ip:8334."
   },
   {
     "type": 1,
@@ -616,13 +639,11 @@
         "name": "PUID",
         "label": "PUID",
         "default": "1000"
-        
       },
       {
         "name": "PGID",
         "label": "PGID",
         "default": "100"
-        
       }
     ]
   },
