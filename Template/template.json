@@ -65,7 +65,7 @@
     "name": "Filestash",
     "description": "Filestash is web application that's used as a file manager to manage your data using: FTP • FTPS • SFTP • WebDAV • Git • S3 • LDAP • Mysql • CardDAV • CalDAV • Backblaze B2 • Minio • Dropbox • Google Drive.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/filestash.png",
-    "image": "machines/filestash:latest",
+    "image": "cashstory/filestash:latest",
     "categories": [
       "Other",
       "Tools"
