@@ -73,7 +73,7 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8334:8334/tcp"
+      "3340:3340/tcp"
     ],
     "volumes": [
       {
