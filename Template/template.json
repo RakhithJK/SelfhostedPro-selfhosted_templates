@@ -61,11 +61,11 @@
   },
   {
     "type": 1,
-    "title": "Filestash",
-    "name": "Filestash",
-    "description": "Filestash is web application that's used as a file manager to manage your data using: FTP • FTPS • SFTP • WebDAV • Git • S3 • LDAP • Mysql • CardDAV • CalDAV • Backblaze B2 • Minio • Dropbox • Google Drive.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/filestash.png",
-    "image": "cashstory/filestash:latest",
+    "title": "Wallabag",
+    "name": "Wallabag",
+    "description": "Wallabag is a self hostable application for saving web pages. Unlike other services, wallabag is free (as in freedom) and open source.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/wallabag.png",
+    "image": "wallabag/wallabag:latest",
     "categories": [
       "Other",
       "Tools"
@@ -73,15 +73,19 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "3340:3340/tcp"
+      "8901:80/tcp"
     ],
     "volumes": [
       {
-        "container": "/app/data",
-        "bind": "/portainer/Files/AppData/Config/Filestash"
+        "container": "/var/www/wallabag/web/assets/images",
+        "bind": "/portainer/Files/AppData/Config/Wallabag/images"
+      },
+      {
+        "container": "/var/www/wallabag/data",
+        "bind": "/portainer/Files/AppData/Config/Wallabag/data"
       }
     ],
-    "note": "Access the ui at your-ip:8334."
+    "note": "Access the ui at your-ip:8901 unless port was changed."
   },
   {
     "type": 1,
