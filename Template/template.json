@@ -81,7 +81,18 @@
         "bind": "/portainer/Files/AppData/Config/Shaarli"
       }
     ],
-    "note": "Username and password is demo/demo."
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "1000"
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "100"
+      }
+    ]
   },
   {
     "type": 1,
