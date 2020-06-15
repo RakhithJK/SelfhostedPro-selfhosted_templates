@@ -61,11 +61,11 @@
   },
   {
     "type": 1,
-    "title": "Wallabag",
-    "name": "Wallabag",
-    "description": "Wallabag is a self hostable application for saving web pages. Unlike other services, wallabag is free (as in freedom) and open source.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/wallabag.png",
-    "image": "wallabag/wallabag:latest",
+    "title": "Shaarli",
+    "name": "Shaarli",
+    "description": "The personal, minimalist, super-fast, database free, bookmarking service.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/shaarli.png",
+    "image": "shaarli/shaarli:latest",
     "categories": [
       "Other",
       "Tools"
@@ -73,19 +73,15 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8901:80/tcp"
+      "8987:80/tcp"
     ],
     "volumes": [
       {
-        "container": "/var/www/wallabag/web/assets/images",
-        "bind": "/portainer/Files/AppData/Config/Wallabag/images"
-      },
-      {
-        "container": "/var/www/wallabag/data",
-        "bind": "/portainer/Files/AppData/Config/Wallabag/data"
+        "container": "/var/www/shaarli/data",
+        "bind": "/portainer/Files/AppData/Config/Shaarli"
       }
     ],
-    "note": "Access the ui at your-ip:8901 unless port was changed."
+    "note": "Username and password is demo/demo."
   },
   {
     "type": 1,
