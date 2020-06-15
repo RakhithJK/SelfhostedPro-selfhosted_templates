@@ -90,7 +90,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
