@@ -1,5 +1,5 @@
 
-# Portainer Templates for Selfhosted Projects/Homelabs
+# Yacht Templates for Selfhosted Projects/Homelabs
 
 This is a template focused on helping people spin up selfhosted services using Portainer.
 
@@ -8,15 +8,16 @@ This is a template focused on helping people spin up selfhosted services using P
 ### Prerequisites
 
 1. A server/NAS with docker installed
-2. A Portainer setup.
+2. [Yacht](https://github.com/SelfhostedPro/Yacht) setup
 
 *Want something we don't have? Make an issue and we'll work on adding it*
 
 ### Installing
 
-1. Login to your portainer setup go to settings 
-2. Enable Use external templates
-3. Add the url: `https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Template/template.json` then go to app templates and hit refresh at the top.
+1. Login to your yacht web interface 
+2. Go to templates 
+3. Select Add Template
+3. Add the url: `https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/yacht/Template/template.json` then go to Apps and start deploying.
 
 ### Information
 All templates are already configured to bind mount to various places on your drive. This branch works without the need for OMV. The following folders are all created in /portainer/
