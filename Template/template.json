@@ -51,12 +51,12 @@
       {
         "name": "CONTEXT_PATH",
         "label": "CONTEXT_PATH",
-        "set": "airsonic"
+        "default": "airsonic"
       },
       {
         "name": "JAVA_OPTS",
         "label": "JAVA_OPTS",
-        "set": "-Xms256m -Xmx512m"
+        "default": "-Xms256m -Xmx512m"
       }
     ]
   },
@@ -301,49 +301,6 @@
     ]
   },
   {
-    "type": 3,
-    "title": "Bookstack",
-    "description": "Bookstack is a free and open source Wiki designed for creating beautiful documentation. Feautring a simple, but powerful WYSIWYG editor it allows for teams to create detailed and useful documentation with ease.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bookstack2.png",
-    "categories": [
-      "Wiki"
-    ],
-    "note": "Default login is admin@admin.com with a password of password. The database created is called bookstackapp and the database user is called bookstack",
-    "platform": "linux",
-    "repository": {
-      "url": "https://github.com/SelfhostedPro/selfhosted_templates",
-      "stackfile": "Template/Stack/bookstack.yml"
-    },
-    "env": [
-      {
-        "name": "PUID",
-        "label": "PUID",
-        "default": "1000"
-      },
-      {
-        "name": "PGID",
-        "label": "PGID",
-        "default": "100"
-      },
-      {
-        "name": "TZ",
-        "label": "TZ"
-      },
-      {
-        "name": "DATABASE_PASSWORD",
-        "label": "DATABASE_PASSWORD"
-      },
-      {
-        "name": "MYSQL_ROOT_PASSWORD",
-        "label": "MYSQL_ROOT_PASSWORD"
-      },
-      {
-        "name": "PORT",
-        "label": "PORT"
-      }
-    ]
-  },
-  {
     "type": 1,
     "title": "COPS",
     "name": "cops",
@@ -491,27 +448,27 @@
       {
         "name": "CHEVERETO_DB_HOST",
         "label": "CHEVERETO_DB_HOST",
-        "set": ""
+        "default": ""
       },
       {
         "name": "CHEVERETO_DB_USERNAME",
         "label": "CHEVERETO_DB_USERNAME",
-        "set": ""
+        "default": ""
       },
       {
         "name": "CHEVERETO_DB_PASSWORD",
         "label": "CHEVERETO_DB_PASSWORD",
-        "set": ""
+        "default": ""
       },
       {
         "name": "CHEVERETO_DB_NAME",
         "label": "CHEVERETO_DB_NAME",
-        "set": ""
+        "default": ""
       },
       {
         "name": "CHEVERETO_DB_PREFIX",
         "label": "CHEVERETO_DB_PREFIX",
-        "set": ""
+        "default": ""
       }
     ]
   },
@@ -831,7 +788,7 @@
       {
         "name": "UMASK_SET",
         "label": "UMASK_SET",
-        "set": "000"
+        "default": "000"
       }
     ]
   },
@@ -889,12 +846,12 @@
       {
         "name": "SUBDOMAINS",
         "label": "SUBDOMAINS",
-        "set": ""
+        "default": ""
       },
       {
         "name": "TOKEN",
         "label": "TOKEN",
-        "set": ""
+        "default": ""
       },
       {
         "name": "PUID",
@@ -1338,53 +1295,6 @@
     ]
   },
   {
-    "type": 3,
-    "title": "Invoice Ninja",
-    "name": "invoice_ninja",
-    "description": "Invoices, Expenses and Tasks built with Laravel and Flutter.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/invoice_ninja.png",
-    "categories": [
-      "Cloud",
-      "Productivity",
-      "Tools",
-      "Other",
-      "Web"
-    ],
-    "note": "The database user is invoice_ninja and the database is ninja_db. Please generate an app key following the documentation <a href='https://github.com/invoiceninja/dockerfiles'>here</a>. ",
-    "platform": "linux",
-    "repository": {
-      "url": "https://github.com/SelfhostedPro/selfhosted_templates",
-      "stackfile": "Template/Stack/invoice-ninja.yml"
-    },
-    "env": [
-      {
-        "name": "URL",
-        "label": "URL",
-        "default": "invoice.my.domain"
-      },
-      {
-        "name": "APP_KEY",
-        "label": "APP_KEY"
-      },
-      {
-        "name": "TZ",
-        "label": "TZ"
-      },
-      {
-        "name": "DATABASE_PASSWORD",
-        "label": "DATABASE_PASSWORD"
-      },
-      {
-        "name": "MYSQL_ROOT_PASSWORD",
-        "label": "MYSQL_ROOT_PASSWORD"
-      },
-      {
-        "name": "PORT",
-        "label": "PORT"
-      }
-    ]
-  },
-  {
     "type": 1,
     "title": "Jackett",
     "name": "jackett",
@@ -1573,27 +1483,27 @@
       {
         "name": "EMAIL",
         "label": "EMAIL",
-        "set": "-Xms256m -Xmx512m"
+        "default": "-Xms256m -Xmx512m"
       },
       {
         "name": "URL",
         "label": "URL",
-        "set": "-Xms256m -Xmx512m"
+        "default": "-Xms256m -Xmx512m"
       },
       {
         "name": "SUBDOMAINS",
         "label": "SUBDOMAINS",
-        "set": "www,"
+        "default": "www,"
       },
       {
         "name": "ONLY_SUBDOMAINS",
         "label": "ONLY_SUBDOMAINS",
-        "set": "false"
+        "default": "false"
       },
       {
         "name": "DHLEVEL",
         "label": "DHLEVEL",
-        "set": "2048"
+        "default": "2048"
       },
       {
         "name": "PUID",
@@ -1608,12 +1518,12 @@
       {
         "name": "VALIDATION",
         "label": "VALIDATION",
-        "set": "http"
+        "default": "http"
       },
       {
         "name": "DNSPLUGIN",
         "label": "DNSPLUGIN",
-        "set": "http"
+        "default": "http"
       }
     ]
   },
@@ -1717,7 +1627,7 @@
       {
         "name": "MYSQL_ROOT_PASSWORD",
         "label": "MYSQL_ROOT_PASSWORD",
-        "set": ""
+        "default": ""
       }
     ]
   },
@@ -1974,7 +1884,7 @@
       {
         "name": "BRAINZCODE",
         "label": "BRAINZCODE",
-        "set": ""
+        "default": ""
       },
       {
         "name": "PUID",
@@ -2147,54 +2057,6 @@
     ]
   },
   {
-    "type": 3,
-    "title": "Nextcloud",
-    "name": "nextcloud",
-    "description": "Where are your photos and documents? With Nextcloud you pick a server of your choice, at home, in a data center or at a provider. And that is where your files will be. Nextcloud runs on that server, protecting your data and giving you access from your desktop or mobile devices.",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/nextcloud-icon.png",
-    "categories": [
-      "Cloud",
-      "Productivity",
-      "Tools",
-      "Other",
-      "Web"
-    ],
-    "note": "The database user is nextcloud and the database is nextcloud_db. The host of the database will be located at the bottom of the DB conotainer in portainer.",
-    "platform": "linux",
-    "repository": {
-      "url": "https://github.com/SelfhostedPro/selfhosted_templates",
-      "stackfile": "Template/Stack/nextcloud.yml"
-    },
-    "env": [
-      {
-        "name": "PUID",
-        "label": "PUID",
-        "default": "1000"
-      },
-      {
-        "name": "PGID",
-        "label": "PGID",
-        "default": "100"
-      },
-      {
-        "name": "TZ",
-        "label": "TZ"
-      },
-      {
-        "name": "DATABASE_PASSWORD",
-        "label": "DATABASE_PASSWORD"
-      },
-      {
-        "name": "MYSQL_ROOT_PASSWORD",
-        "label": "MYSQL_ROOT_PASSWORD"
-      },
-      {
-        "name": "PORT",
-        "label": "PORT"
-      }
-    ]
-  },
-  {
     "type": 1,
     "title": "Nginx",
     "name": "nginx",
@@ -2354,7 +2216,7 @@
       {
         "name": "INTERFACE",
         "label": "INTERFACE",
-        "set": "eth0"
+        "default": "eth0"
       },
       {
         "name": "PUID",
@@ -2554,7 +2416,7 @@
       {
         "name": "VERSION",
         "label": "VERSION",
-        "set": "latest"
+        "default": "latest"
       }
     ]
   },
@@ -2596,7 +2458,7 @@
       {
         "name": "URL_BASE",
         "label": "URL_BASE",
-        "set": ""
+        "default": ""
       }
     ]
   },
@@ -3432,7 +3294,7 @@
       {
         "name": "MAXMEM",
         "label": "MAXMEM",
-        "set": "512"
+        "default": "512"
       },
       {
         "name": "PUID",
