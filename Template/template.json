@@ -3189,6 +3189,11 @@
         "bind": "/etc/localtime"
       }
     ],
+    "sysctls": [
+      {
+      "net.ipv6.conf.all.disable_ipv6": "0"
+      }
+    ],
     "env": [
       {
         "name": "PUID",
