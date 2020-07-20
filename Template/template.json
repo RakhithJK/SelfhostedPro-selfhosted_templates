@@ -3894,6 +3894,42 @@
     ]
   },
   {
+    "type": 3,
+    "title": "Wordpress",
+    "name": "wordpress",
+    "description": "Where are your photos and documents? With Nextcloud you pick a server of your choice, at home, in a data center or at a provider. And that is where your files will be. Nextcloud runs on that server, protecting your data and giving you access from your desktop or mobile devices.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/nextcloud-icon.png",
+    "categories": [
+      "Cloud",
+      "Productivity",
+      "Tools",
+      "Other",
+      "Web"
+    ],
+    "note": "The database user is wordpress and the database is wp_database. The host of the database will be located at the bottom of the DB conotainer in portainer.",
+    "platform": "linux",
+    "repository": {
+      "url": "https://github.com/SelfhostedPro/selfhosted_templates",
+      "stackfile": "Template/Stack/wordpress.yml"
+    },
+    "env": [
+      {
+        "name": "DATABASE_PASSWORD",
+        "label": "DATABASE_PASSWORD"
+      },
+      {
+        "name": "MYSQL_ROOT_PASSWORD",
+        "label": "MYSQL_ROOT_PASSWORD"
+      },
+      {
+        "name": "WP_PORT",
+        "label": "Wordpress Port"
+      },
+        "name": "PHP_PORT",
+        "label": "Phpmyadmin Port"
+    ]
+  },
+  {
     "type": 1,
     "title": "ZNC",
     "name": "znc",
