@@ -3195,7 +3195,7 @@
       }
     ],
     "cap_add": [
-      "NET_ADMIN",
+      "NET_ADMIN"
     ],
     "env": [
       {
