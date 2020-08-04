@@ -129,7 +129,7 @@
     "volumes": [
       {
         "container": "/etc/authelia/",
-        "bind": "/portainer/Files/AppData/Config/Authelia"
+        "bind": "!config/Authelia"
       }
     ],
     "env": [
