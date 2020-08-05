@@ -17,24 +17,24 @@
     "volumes": [
       {
         "container": "/music",
-        "bind": "/portainer/Music"
+        "bind": "!music"
 
       },
       {
         "container": "/playlists",
-        "bind": "/portainer/Files/AppData/Airsonic/Playlists"
+        "bind": "!playlists"
       },
       {
         "container": "/podcasts",
-        "bind": "/portainer/Podcasts"
+        "bind": "!podcasts"
       },
       {
         "container": "/media",
-        "bind": "/portainer/Files/AppData/Airsonic/Media"
+        "bind": "!media/Airsonic"
       },
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Airsonic/"
+        "bind": "!config/Airsonic/"
       }
     ],
     "env": [
@@ -79,7 +79,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/EmbyStat"
+        "bind": "!config/EmbyStat"
       }
     ],
     "note": "Access the ui at your-ip:6555. Follow the setup wizard on initial install. Then configure the required services."
@@ -103,7 +103,7 @@
     "volumes": [
       {
         "container": "/app/db/database",
-        "bind": "/portainer/Files/AppData/Config/Snibox"
+        "bind": "!config/Snibox"
       }
     ],
     "note": "Label-oriented interface with search. Supports various programming languages, markdown, plain text."
@@ -158,15 +158,15 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Bazarr"
+        "bind": "!config/Bazarr"
       },
       {
         "container": "/tv",
-        "bind": "/portainer/TV"
+        "bind": "!tv"
       },
       {
         "container": "/movies",
-        "bind": "/portainer/Movies"
+        "bind": "!movies"
       }
     ],
     "env": [
@@ -204,15 +204,15 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Beets"
+        "bind": "!config/Beets"
       },
       {
         "container": "/downloads",
-        "bind": "/portainer/Downloads"
+        "bind": "!downloads"
       },
       {
         "container": "/music",
-        "bind": "/portainer/Music"
+        "bind": "!music"
       }
     ],
     "env": [
@@ -248,7 +248,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Bitwarden-rs"
+        "bind": "!config/Bitwarden-rs"
       }
     ]
   },
@@ -271,15 +271,15 @@
     "volumes": [
       {
         "container": "/books",
-        "bind": "/portainer/Books"
+        "bind": "!books"
       },
       {
         "container": "/podcast",
-        "bind": "/portainer/Files/Podcasts"
+        "bind": "!podcasts"
       },
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Booksonic"
+        "bind": "!config/Booksonic"
       }
     ],
     "env": [
@@ -319,11 +319,11 @@
     "volumes": [
       {
         "container": "/books",
-        "bind": "/portainer/Books"
+        "bind": "!books"
       },
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Cops"
+        "bind": "!config/Cops"
       }
     ],
     "env": [
@@ -358,11 +358,11 @@
     "volumes": [
       {
         "container": "/books",
-        "bind": "/portainer/Books"
+        "bind": "!books"
       },
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Calibre-web"
+        "bind": "!config/Calibre-web"
       }
     ],
     "env": [
@@ -396,7 +396,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Cardigann"
+        "bind": "!config/Cardigann"
       }
     ],
     "env": [
@@ -491,7 +491,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Chowdown"
+        "bind": "!config/Chowdown"
       }
     ]
   },
@@ -543,7 +543,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Code-Server"
+        "bind": "!config/Code-Server"
       }
     ]
   },
@@ -565,7 +565,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Codiad"
+        "bind": "!config/Codiad"
       }
     ],
     "env": [
@@ -602,15 +602,15 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Couchpotato"
+        "bind": "!config/Couchpotato"
       },
       {
         "container": "/downloads",
-        "bind": "/portainer/Downloads"
+        "bind": "!downloads"
       },
       {
         "container": "/movies",
-        "bind": "/portainer/Movies"
+        "bind": "!movies"
       }
     ],
     "env": [
@@ -641,11 +641,11 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Daapd"
+        "bind": "!config/Daapd"
       },
       {
         "container": "/music",
-        "bind": "/portainer/Music"
+        "bind": "!music"
       }
     ],
     "env": [
@@ -680,7 +680,7 @@
     "volumes": [
       {
         "container": "/dashmachine/dashmachine/user_data",
-        "bind": "/portainer/Files/AppData/Config/Dashmachine"
+        "bind": "!config/Dashmachine"
       }
     ]
   },
@@ -704,11 +704,11 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Davos"
+        "bind": "!config/Davos"
       },
       {
         "container": "/downloads",
-        "bind": "/portainer/Downloads"
+        "bind": "!downloads"
       }
     ],
     "env": [
@@ -743,11 +743,11 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/DeeMix"
+        "bind": "!config/DeeMix"
       },
       {
         "container": "/downloads",
-        "bind": "/portainer/Downloads"
+        "bind": "!downloads"
       }
     ],
     "note": "Deemix may take a few minutes to install. Be sure to check the logs for details. Refer to <a href='https://notabug.org/RemixDevs/DeezloaderRemix/wiki/Login+via+userToken'>this page</a> for userToken details."
@@ -767,11 +767,11 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Deluge"
+        "bind": "!config/Deluge"
       },
       {
         "container": "/downloads",
-        "bind": "/portainer/Downloads"
+        "bind": "!downloads"
       }
     ],
     "env": [
@@ -813,7 +813,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Domoticz"
+        "bind": "!config/Domoticz"
       }
     ],
     "env": [
@@ -887,7 +887,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Duplicati"
+        "bind": "!config/Duplicati"
       },
       {
         "container": "/tmp"
@@ -933,15 +933,15 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Emby"
+        "bind": "!config/Emby"
       },
       {
         "container": "/data/tvshows",
-        "bind": "/portainer/TV"
+        "bind": "!tv"
       },
       {
         "container": "/data/movies",
-        "bind": "/portainer/Movies"
+        "bind": "!movies"
       }
     ],
     "env": [
@@ -981,11 +981,11 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/FileBrowser"
+        "bind": "!config/FileBrowser"
       },
       {
         "container": "/myfiles",
-        "bind": "/portainer/Files/AppData/Config"
+        "bind": "!config"
       }
     ]
   },
@@ -1007,7 +1007,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/freshrss"
+        "bind": "!config/freshrss"
       }
     ],
     "env": [
@@ -1040,15 +1040,15 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Gazee"
+        "bind": "!config/Gazee"
       },
       {
         "container": "/comics",
-        "bind": "/portainer/Comics"
+        "bind": "!comics"
       },
       {
         "container": "/mylar",
-        "bind": "/portainer/Files/AppData/Gazee"
+        "bind": "!data/Gazee"
       }
     ],
     "env": [
@@ -1084,7 +1084,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Guacamole"
+        "bind": "!config/Guacamole"
       }
     ]
   },
@@ -1108,7 +1108,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Grocy"
+        "bind": "!config/Grocy"
       }
     ],
     "env": [
@@ -1148,7 +1148,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/HTPCmanager"
+        "bind": "!config/HTPCmanager"
       }
     ],
     "env": [
@@ -1182,15 +1182,15 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Headphones"
+        "bind": "!config/Headphones"
       },
       {
         "container": "/Downloads",
-        "bind": "/portainer/Downloads"
+        "bind": "!downloads"
       },
       {
         "container": "/music",
-        "bind": "/portainer/Music"
+        "bind": "!music"
       }
     ],
     "env": [
@@ -1227,7 +1227,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Heimdall"
+        "bind": "!config/Heimdall"
       }
     ],
     "env": [
@@ -1263,11 +1263,11 @@
     "volumes": [
       {
         "container": "/www/assets",
-        "bind": "/portainer/Files/AppData/Config/Homer/assets"
+        "bind": "!config/Homer/assets"
       },
       {
         "container": "/www/config.yml",
-        "bind": "/portainer/Files/AppData/Config/Homer"
+        "bind": "!config/Homer"
       }
     ]
   },
@@ -1290,7 +1290,7 @@
     "volumes": [
       {
         "container": "/var/lib/mysql",
-        "bind": "/portainer/Files/AppData/Config/huginn"
+        "bind": "!config/huginn"
       }
     ]
   },
@@ -1313,11 +1313,11 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Jackett"
+        "bind": "!config/Jackett"
       },
       {
         "container": "/downloads",
-        "bind": "/portainer/Downloads"
+        "bind": "!downloads"
       }
     ],
     "env": [
@@ -1354,15 +1354,15 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Jelllyfin"
+        "bind": "!config/Jelllyfin"
       },
       {
         "container": "/data/tvshows",
-        "bind": "/portainer/TV"
+        "bind": "!tv"
       },
       {
         "container": "/data/movies",
-        "bind": "/portainer/Movies"
+        "bind": "!movies"
       }
     ],
     "env": [
@@ -1401,7 +1401,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Kodi"
+        "bind": "!config/Kodi"
       }
     ],
     "env": [
@@ -1476,7 +1476,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/LetsEncrypt"
+        "bind": "!config/LetsEncrypt"
       }
     ],
     "env": [
@@ -1546,7 +1546,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/LibreSpeed"
+        "bind": "!config/LibreSpeed"
       }
     ]
   },
@@ -1571,11 +1571,11 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Lychee"
+        "bind": "!config/Lychee"
       },
       {
         "container": "/pictures",
-        "bind": "/portainer/Pictures"
+        "bind": "!pictures"
       }
     ],
     "env": [
@@ -1610,7 +1610,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Mariadb"
+        "bind": "!config/Mariadb"
       }
     ],
     "env": [
@@ -1684,15 +1684,15 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Medusa"
+        "bind": "!config/Medusa"
       },
       {
         "container": "/tv",
-        "bind": "/portainer/TV"
+        "bind": "!tv"
       },
       {
         "container": "/downloads",
-        "bind": "/portainer/Downloads"
+        "bind": "!downloads"
       }
     ],
     "env": [
@@ -1792,11 +1792,11 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Mstream"
+        "bind": "!config/Mstream"
       },
       {
         "container": "/music",
-        "bind": "/portainer/Downloads"
+        "bind": "!downloads"
       }
     ]
   },
@@ -1821,19 +1821,19 @@
     "volumes": [
       {
         "container": "/etc/localtime",
-        "bind": "/etc/localtime:ro"
+        "bind": "!localtime"
       },
       {
         "container": "/opt/murmur/config",
-        "bind": "/portainer/Files/Config/Murmur"
+        "bind": "!config/Murmur"
       },
       {
         "container": "/opt/murmur/data",
-        "bind": "/portainer/Files/Murmur/data"
+        "bind": "!data/Murmur"
       },
       {
         "container": "/opt/murmur/log",
-        "bind": "/portainer/Files/Murmur/log"
+        "bind": "!logs/Murmur/"
       }
     ],
     "env": [
@@ -1873,11 +1873,11 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/MusicBrainz"
+        "bind": "!config/MusicBrainz"
       },
       {
         "container": "/data",
-        "bind": "/portainer/Files/AppData/MusicBrainz"
+        "bind": "!data/MusicBrainz"
       }
     ],
     "env": [
@@ -1919,7 +1919,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Muximux"
+        "bind": "!config/Muximux"
       }
     ],
     "env": [
@@ -1954,15 +1954,15 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Mylar"
+        "bind": "!config/Mylar"
       },
       {
         "container": "/downloads",
-        "bind": "/portainer/Downloads"
+        "bind": "!downloads"
       },
       {
         "container": "/comics",
-        "bind": "/portainer/Comics"
+        "bind": "!comics"
       }
     ],
     "env": [
@@ -1996,11 +1996,11 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Nzbget"
+        "bind": "!config/Nzbget"
       },
       {
         "container": "/downloads",
-        "bind": "/portainer/Downloads"
+        "bind": "!downloads"
       }
     ],
     "env": [
@@ -2036,11 +2036,11 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Nzbhydra2"
+        "bind": "!config/Nzbhydra2"
       },
       {
         "container": "/downloads",
-        "bind": "/portainer/Downloads"
+        "bind": "!downloads"
       }
     ],
     "env": [
@@ -2076,7 +2076,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Nginx"
+        "bind": "!config/Nginx"
       }
     ],
     "env": [
@@ -2113,7 +2113,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Nginx-Proxy"
+        "bind": "!config/Nginx-Proxy"
       }
     ]
   },
@@ -2136,7 +2136,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/OScam"
+        "bind": "!config/OScam"
       }
     ],
     "env": [
@@ -2173,7 +2173,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Ombi"
+        "bind": "!config/Ombi"
       }
     ],
     "env": [
@@ -2209,7 +2209,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/OpenVPN-AS"
+        "bind": "!config/OpenVPN-AS"
       }
     ],
     "env": [
@@ -2249,7 +2249,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Organizr"
+        "bind": "!config/Organizr"
       }
     ],
     "env": [
@@ -2283,15 +2283,15 @@
     "volumes": [
       {
         "container": "/Pictures",
-        "bind": "/portainer/Pictures"
+        "bind": "!pictures"
       },
       {
         "container": "/Thumbs",
-        "bind": "/portainer/Files/AppData/Photoshow/Thumbs"
+        "bind": "!config/Photoshow/Thumbs"
       },
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/PhotoShow"
+        "bind": "!config/PhotoShow"
       }
     ],
     "env": [
@@ -2330,11 +2330,11 @@
     "volumes": [
       {
         "container": "/etc/pihole",
-        "bind": "/portainer/Files/AppData/Config/PiHole"
+        "bind": "!config/PiHole"
       },
       {
         "container": "/etc/dnsmasq.d",
-        "bind": "/portainer/Files/AppData/Config/PiHole/DNS"
+        "bind": "!config/PiHole/DNS"
       }
     ],
     "note": "When the installation is complete, navigate to your.ip.goes.here:1010/admin. Follow the article <a href='https://medium.com/@niktrix/getting-rid-of-systemd-resolved-consuming-port-53-605f0234f32f'>here</a> if you run into issues binding to port 53."
@@ -2357,7 +2357,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/PiWigo"
+        "bind": "!config/PiWigo"
       }
     ],
     "env": [
@@ -2391,15 +2391,15 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Plex"
+        "bind": "!config/Plex"
       },
       {
         "container": "/tv",
-        "bind": "/portainer/TV"
+        "bind": "!tv"
       },
       {
         "container": "/movies",
-        "bind": "/portainer/Movies"
+        "bind": "!movies"
       }
     ],
     "env": [
@@ -2441,7 +2441,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/PlexRequests"
+        "bind": "!config/PlexRequests"
       }
     ],
     "env": [
@@ -2483,11 +2483,11 @@
     "volumes": [
       {
         "container": "/data",
-        "bind": "/portainer/Files/AppData/ProjectSend"
+        "bind": "!data/ProjectSend"
       },
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/ProjectSend"
+        "bind": "!config/ProjectSend"
       }
     ],
     "env": [
@@ -2526,7 +2526,7 @@
     "volumes": [
       {
         "container": "/root",
-        "bind": "/portainer/Files/AppData/ProtonMail-Bridge"
+        "bind": "!config/ProtonMail-Bridge"
       }
     ]
   },
@@ -2549,11 +2549,11 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Pydio"
+        "bind": "!config/Pydio"
       },
       {
         "container": "/data",
-        "bind": "/portainer/Files/AppData/Pydio"
+        "bind": "!data/Pydio"
       }
     ],
     "env": [
@@ -2587,7 +2587,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Quassel-core"
+        "bind": "!config/Quassel-core"
       }
     ],
     "env": [
@@ -2622,15 +2622,15 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Radarr"
+        "bind": "!config/Radarr"
       },
       {
         "container": "/downloads",
-        "bind": "/portainer/Downloads"
+        "bind": "!downloads"
       },
       {
         "container": "/movies",
-        "bind": "/portainer/Movies"
+        "bind": "!movies"
       }
     ],
     "env": [
@@ -2665,7 +2665,7 @@
     "volumes": [
       {
         "container": "/usr/src/app",
-        "bind": "/portainer/Files/AppData/Config/ReactiveResume"
+        "bind": "!config/ReactiveResume"
       }
     ]
   },
@@ -2687,14 +2687,14 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Resilio-Sync"
+        "bind": "!config/Resilio-Sync"
       },
       {
         "container": "/sync"
       },
       {
         "container": "/downloads",
-        "bind": "/portainer/Downloads"
+        "bind": "!downloads"
       }
     ],
     "env": [
@@ -2729,15 +2729,15 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Sabnzbd"
+        "bind": "!config/Sabnzbd"
       },
       {
         "container": "/downloads",
-        "bind": "/portainer/Downloads"
+        "bind": "!downloads"
       },
       {
         "container": "/incomplete-downloads",
-        "bind": "/portainer/Downloads/incomplete"
+        "bind": "!downloads/incomplete"
       }
     ],
     "env": [
@@ -2772,7 +2772,7 @@
     "volumes": [
       {
         "container": "/srv/shiori",
-        "bind": "/portainer/Files/AppData/Config/Shiori"
+        "bind": "!config/Shiori"
       }
     ]
   },
@@ -2795,15 +2795,15 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/SickChill"
+        "bind": "!config/SickChill"
       },
       {
         "container": "/downloads",
-        "bind": "/portainer/Downloads"
+        "bind": "!downloads"
       },
       {
         "container": "/tv",
-        "bind": "/portainer/TV"
+        "bind": "!tv"
       }
     ],
     "env": [
@@ -2838,15 +2838,15 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/SickGear"
+        "bind": "!config/SickGear"
       },
       {
         "container": "/tv",
-        "bind": "/portainer/TV"
+        "bind": "!tv"
       },
       {
         "container": "/downloads",
-        "bind": "/portainer/Downloads"
+        "bind": "!downloads"
       }
     ],
     "env": [
@@ -2880,11 +2880,11 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Smokeping"
+        "bind": "!config/Smokeping"
       },
       {
         "container": "/data",
-        "bind": "/portainer/Files/AppData/Smokeping"
+        "bind": "!data/Smokeping"
       }
     ],
     "env": [
@@ -2919,7 +2919,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Sonarr"
+        "bind": "!config/Sonarr"
       },
       {
         "container": "/dev/rtc",
@@ -2927,11 +2927,11 @@
       },
       {
         "container": "/tv",
-        "bind": "/portainer/TV"
+        "bind": "!tv"
       },
       {
         "container": "/downloads",
-        "bind": "/portainer/Downloads"
+        "bind": "!downloads"
       }
     ],
     "env": [
@@ -2970,7 +2970,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Syncthing"
+        "bind": "!config/Syncthing"
       },
       {
         "container": "/sync"
@@ -3008,11 +3008,11 @@
     "volumes": [
       {
         "container": "/logs",
-        "bind": "/portainer/Logs"
+        "bind": "!logs"
       },
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Tautulli"
+        "bind": "!config/Tautulli"
       }
     ],
     "env": [
@@ -3046,7 +3046,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/TheLounge"
+        "bind": "!config/TheLounge"
       }
     ],
     "env": [
@@ -3081,7 +3081,7 @@
     "volumes": [
       {
         "container": "/var/lib/tiddlywiki",
-        "bind": "/portainer/Files/AppData/Config/TiddlyWiki"
+        "bind": "!config/TiddlyWiki"
       }
     ]
   },
@@ -3103,7 +3103,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/tt-rss"
+        "bind": "!config/tt-rss"
       }
     ],
     "env": [
@@ -3138,11 +3138,11 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Transmission"
+        "bind": "!config/Transmission"
       },
       {
         "container": "/downloads",
-        "bind": "/portainer/Files/Downloads"
+        "bind": "!downloads"
       },
       {
         "container": "/watch"
@@ -3182,11 +3182,11 @@
     "volumes": [
       {
         "container": "/data",
-        "bind": "/portainer/Downloads"
+        "bind": "!downloads"
       },
       {
         "container": "/etc/localtime",
-        "bind": "/etc/localtime"
+        "bind": "!localtime"
       }
     ],
     "sysctls": [
@@ -3251,7 +3251,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/TVHeadend"
+        "bind": "!config/TVHeadend"
       },
       {
         "container": "/recordings"
@@ -3342,7 +3342,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Unifi"
+        "bind": "!config/Unifi"
       }
     ],
     "env": [
@@ -3395,11 +3395,11 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/WebGrabPlus"
+        "bind": "!config/WebGrabPlus"
       },
       {
         "container": "/data",
-        "bind": "/portainer/Files/AppData/WebGrabPlus"
+        "bind": "!data/WebGrabPlus"
       }
     ],
     "env": [
@@ -3434,7 +3434,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Whoogle"
+        "bind": "!config/Whoogle"
       }
     ]
   },
@@ -3457,11 +3457,11 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Wikijs"
+        "bind": "!config/Wikijs"
       },
       {
         "container": "/data",
-        "bind": "/portainer/Files/AppData/Config/Wikijs/data"
+        "bind": "!data/Wikijs"
       }
     ]
   },
@@ -3484,23 +3484,23 @@
     "volumes": [
       {
         "container": "/app/appdata",
-        "bind": "/portainer/Files/AppData/Config/YTDLM"
+        "bind": "!config/YTDLM"
       },
       {
         "container": "/app/video",
-        "bind": "/portainer/Files/AppData/Youtube/Video"
+        "bind": "!config/Youtube/Video"
       },
       {
         "container": "/app/subscriptions",
-        "bind": "/portainer/Files/AppData/Youtube/Subscriptions"
+        "bind": "!config/Youtube/Subscriptions"
       },
       {
         "container": "/app/users",
-        "bind": "/portainer/Files/AppData/Youtube/Users"
+        "bind": "!config/Youtube/Users"
       },
       {
         "container": "/app/audio",
-        "bind": "/portainer/Files/AppData/Youtube/Audio"
+        "bind": "!config/Youtube/Audio"
       }
     ]
   },
@@ -3522,7 +3522,7 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/ZNC"
+        "bind": "!config/ZNC"
       }
     ],
     "env": [
@@ -3557,15 +3557,15 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/Lidarr"
+        "bind": "!config/Lidarr"
       },
       {
         "container": "/downloads",
-        "bind": "/portainer/Downloads"
+        "bind": "!downloads"
       },
       {
         "container": "/music",
-        "bind": "/portainer/Music"
+        "bind": "!music"
       }
     ],
     "env": [
@@ -3601,11 +3601,11 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/qBittorrent"
+        "bind": "!config/qBittorrent"
       },
       {
         "container": "/downloads",
-        "bind": "/portainer/Downloads"
+        "bind": "!downloads"
       }
     ],
     "env": [
@@ -3641,11 +3641,11 @@
     "volumes": [
       {
         "container": "/config",
-        "bind": "/portainer/Files/AppData/Config/ruTorrent"
+        "bind": "!config/ruTorrent"
       },
       {
         "container": "/downloads",
-        "bind": "/portainer/Downloads"
+        "bind": "!downloads"
       }
     ],
     "env": [
