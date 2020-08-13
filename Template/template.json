@@ -49,11 +49,6 @@
         "default": "100"
       },
       {
-        "name": "CONTEXT_PATH",
-        "label": "CONTEXT_PATH",
-        "default": "airsonic"
-      },
-      {
         "name": "JAVA_OPTS",
         "label": "JAVA_OPTS",
         "default": "-Xms256m -Xmx512m"
