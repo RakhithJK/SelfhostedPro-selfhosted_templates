@@ -253,6 +253,23 @@
   },
   {
     "type": 1,
+    "title": "Cloudflare DDNS",
+    "name": "cloudflare",
+    "description": "This small Alpine Linux based Docker image will allow you to use the free CloudFlare DNS Service as a Dynamic DNS Provider (DDNS).",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/cloudflare.png",
+    "image": "oznu/cloudflare-ddns",
+    "categories": [
+        "DNS",
+        "Cloud",
+        "Other",
+        "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "note": "Follow the steps at https://github.com/oznu/docker-cloudflare-ddns#creating-a-cloudflare-api-token to generate a proper API Token for Cloudflare",
+  },
+  {
+    "type": 1,
     "title": "EmbyStat",
     "name": "embystat",
     "description": "Embystat is a personal web server that can calculate all kinds of statistics from your (local) Emby server. Just install this on your server and let him calculate all kinds of fun stuff.",
