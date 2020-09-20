@@ -253,6 +253,22 @@
   },
   {
     "type": 1,
+    "title: "Calibre",
+    "name": "calibre",
+    "description": "Calibre is a powerful and easy to use e-book manager",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/calibre.png",
+    "image": "linuxserver/calibre",
+    "categories": [
+      "Tools",
+      "Books",
+      "Other"
+    ],
+    "platform": "linux"
+    "restart-policy": "unless-stopped"
+    
+  },  
+  {
+    "type": 1,
     "title": "Cloudflare DDNS",
     "name": "cloudflare-ddns",
     "description": "This small Alpine Linux based Docker image will allow you to use the free CloudFlare DNS Service as a Dynamic DNS Provider (DDNS).",
