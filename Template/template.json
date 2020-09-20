@@ -270,8 +270,10 @@
       "8081:8081"
     ],
     "volumes": [
-      "container": "/config",
-      "bind": "/portainer/Files/AppData/Config/Calibre"
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/Calibre"
+      }
     ],
     "env": [
       {
