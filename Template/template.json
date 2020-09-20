@@ -254,7 +254,7 @@
   {
     "type": 1,
     "title": "Cloudflare DDNS",
-    "name": "cloudflare",
+    "name": "cloudflare-ddns",
     "description": "This small Alpine Linux based Docker image will allow you to use the free CloudFlare DNS Service as a Dynamic DNS Provider (DDNS).",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/cloudflare.png",
     "image": "oznu/cloudflare-ddns",
@@ -266,7 +266,17 @@
     ],
     "platform": "linux",
     "restart_policy": "unless-stopped",
-    "note": "Follow the steps at https://github.com/oznu/docker-cloudflare-ddns#creating-a-cloudflare-api-token to generate a proper API Token for Cloudflare",
+    "env": [
+      {
+        "name": "API_KEY",
+        "label": "API_KEY"
+      },
+      {
+        "name": "ZONE",
+        "label": "ZONE"
+      }
+    ],  
+    "note": "Follow the steps at https://github.com/oznu/docker-cloudflare-ddns#creating-a-cloudflare-api-token to generate a proper API Token for Cloudflare"
   },
   {
     "type": 1,
