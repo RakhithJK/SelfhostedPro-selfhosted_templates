@@ -253,6 +253,70 @@
   },
   {
     "type": 1,
+    "title": "Calibre",
+    "name": "calibre",
+    "description": "Calibre is a powerful and easy to use e-book manager",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/calibre.png",
+    "image": "linuxserver/calibre",
+    "categories": [
+      "Tools",
+      "Books",
+      "Other"
+    ],
+    "platform": "linux",
+    "restart-policy": "unless-stopped",
+    "ports": [
+      "8080:8080",
+      "8081:8081"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/portainer/Files/AppData/Config/Calibre"
+      }
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "1000"
+      },
+      {
+        "name": "PGID",
+	"label": "PGID",
+	"default": "100"
+      }
+    ]
+  },  
+  {
+    "type": 1,
+    "title": "Cloudflare DDNS",
+    "name": "cloudflare-ddns",
+    "description": "This small Alpine Linux based Docker image will allow you to use the free CloudFlare DNS Service as a Dynamic DNS Provider (DDNS).",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/cloudflare.png",
+    "image": "oznu/cloudflare-ddns",
+    "categories": [
+        "DNS",
+        "Cloud",
+        "Other",
+        "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "env": [
+      {
+        "name": "API_KEY",
+        "label": "API_KEY"
+      },
+      {
+        "name": "ZONE",
+        "label": "ZONE"
+      }
+    ],  
+    "note": "Follow the steps at https://github.com/oznu/docker-cloudflare-ddns#creating-a-cloudflare-api-token to generate a proper API Token for Cloudflare"
+  },
+  {
+    "type": 1,
     "title": "EmbyStat",
     "name": "embystat",
     "description": "Embystat is a personal web server that can calculate all kinds of statistics from your (local) Emby server. Just install this on your server and let him calculate all kinds of fun stuff.",

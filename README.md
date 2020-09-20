@@ -125,6 +125,8 @@ All templates are already configured to bind mount to various places on your dri
 - unifi
 - webgrabplus
 - znc
+- cloudflare-ddns
+- Calibre
 
 ## Contributing
 
