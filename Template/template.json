@@ -12,13 +12,14 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "4040:4040/tcp"
+      {
+      "WebUI": "4040:4040/tcp"
+      }
     ],
     "volumes": [
       {
         "container": "/music",
         "bind": "!music"
-
       },
       {
         "container": "/playlists",
@@ -46,7 +47,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       },
       {
         "name": "JAVA_OPTS",
@@ -69,7 +70,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "6555:6555/tcp"
+      {
+        "WebUI": "6555:6555/tcp"
+      }
     ],
     "volumes": [
       {
@@ -93,7 +96,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "3010:3000/tcp"
+      {
+        "WebUI": "3010:3000/tcp"
+      }
     ],
     "volumes": [
       {
@@ -119,7 +124,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "9091:9091/tcp"
+      {
+        "WebUI": "9091:9091/tcp"
+      }
     ],
     "volumes": [
       {
@@ -148,7 +155,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "6767:6767/tcp"
+      {
+        "WebUI": "6767:6767/tcp"
+      }
     ],
     "volumes": [
       {
@@ -173,7 +182,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       },
       {
         "name": "TZ",
@@ -194,7 +203,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8337:8337/tcp"
+      {
+        "WebUI": "8337:8337/tcp"
+      }
     ],
     "volumes": [
       {
@@ -219,7 +230,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -238,7 +249,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      ":80/tcp"
+      {
+        "WebUI": ":80/tcp"
+      }
     ],
     "volumes": [
       {
@@ -261,7 +274,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "4040:4040/tcp"
+      {
+        "WebUI": "4040:4040/tcp"
+      }
     ],
     "volumes": [
       {
@@ -286,7 +301,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       },
       {
         "name": "CONTEXT_PATH",
@@ -309,7 +324,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "80/tcp"
+      {
+        "WebUI": "80/tcp"
+      }
     ],
     "volumes": [
       {
@@ -330,7 +347,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -348,7 +365,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8083:8083/tcp"
+      {
+        "WebUI": "8083:8083/tcp"
+      }
     ],
     "volumes": [
       {
@@ -369,7 +388,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -386,7 +405,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "5060:5060/tcp"
+      {
+        "WebUI": "5060:5060/tcp"
+      }
     ],
     "volumes": [
       {
@@ -403,7 +424,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -422,7 +443,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "80/tcp"
+      {
+        "WebUI": "80/tcp"
+      }
     ],
     "volumes": [
       {
@@ -438,7 +461,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       },
       {
         "name": "CHEVERETO_DB_HOST",
@@ -481,7 +504,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "4000:4000/tcp"
+      {
+        "WebUI": "4000:4000/tcp"
+      }
     ],
     "volumes": [
       {
@@ -504,7 +529,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8443:8443/tcp"
+      {
+        "WebUI": "8443:8443/tcp"
+      }
     ],
     "env": [
       {
@@ -555,7 +582,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "80/tcp"
+      {
+        "WebUI": "80/tcp"
+      }
     ],
     "volumes": [
       {
@@ -568,13 +597,11 @@
         "name": "PUID",
         "label": "PUID",
         "default": "1000"
-        
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
-        
+        "default": "1000"
       }
     ]
   },
@@ -592,7 +619,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "5050:5050/tcp"
+      {
+        "WebUI": "5050:5050/tcp"
+      }
     ],
     "volumes": [
       {
@@ -617,7 +646,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -652,7 +681,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -670,7 +699,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "5000:5000/tcp"
+      {
+        "WebUI": "5000:5000/tcp"
+      }
     ],
     "volumes": [
       {
@@ -694,7 +725,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8080/tcp"
+      {
+        "WebUI": "8080/tcp"
+      }
     ],
     "volumes": [
       {
@@ -715,7 +748,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -733,7 +766,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "9666:9666/tcp"
+      {
+        "WebUI": "9666:9666/tcp"
+      }
     ],
     "volumes": [
       {
@@ -778,7 +813,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       },
       {
         "name": "UMASK_SET",
@@ -801,9 +836,11 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "1443:1443/tcp",
-      "6144:6144/tcp",
-      "8080:8080/tcp"
+      {
+        "Communication": "1443:1443/tcp",
+        "Sharing": "6144:6144/tcp",
+        "WebUI": "8080:8080/tcp"
+      }
     ],
     "volumes": [
       {
@@ -820,7 +857,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -856,7 +893,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -877,7 +914,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8200:8200/tcp"
+      {
+        "WebUI": "8200:8200/tcp"
+      }
     ],
     "volumes": [
       {
@@ -903,7 +942,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -922,8 +961,10 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8096:8096/tcp",
-      "8920:8920/tcp"
+      {
+        "WebUI": "8096:8096/tcp",
+        "HTTPS WebUI": "8920:8920/tcp"
+      }
     ],
     "volumes": [
       {
@@ -948,7 +989,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       },
       {
         "name": "TZ",
@@ -971,7 +1012,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8082:8082/tcp"
+      {
+        "WebUI": "8082:8082/tcp"
+      }
     ],
     "volumes": [
       {
@@ -997,7 +1040,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "80/tcp"
+      {
+        "WebUI": "80/tcp"
+      }
     ],
     "volumes": [
       {
@@ -1014,7 +1059,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -1055,7 +1100,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -1074,7 +1119,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8080:8080/tcp"
+      {
+        "WebUI": "8080:8080/tcp"
+      }
     ],
     "volumes": [
       {
@@ -1098,7 +1145,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "80/tcp"
+      {
+        "WebUI": "80/tcp"
+      }
     ],
     "volumes": [
       {
@@ -1115,7 +1164,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       },
       {
         "name": "TZ",
@@ -1138,7 +1187,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8085:8085/tcp"
+      {
+        "WebUI": "8085:8085/tcp"
+      }
     ],
     "volumes": [
       {
@@ -1155,7 +1206,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -1172,7 +1223,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8181:8181/tcp"
+      {
+        "WebUI": "8181:8181/tcp"
+      }
     ],
     "volumes": [
       {
@@ -1197,7 +1250,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -1216,8 +1269,10 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "80/tcp",
-      "443/tcp"
+      {
+        "WebUI": "80/tcp",
+        "HTTPS WebUI": "443/tcp"
+      }
     ],
     "volumes": [
       {
@@ -1234,7 +1289,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -1253,7 +1308,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8902:8080/tcp"
+      {
+        "WebUI": "8902:8080/tcp"
+      }
     ],
     "volumes": [
       {
@@ -1280,7 +1337,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "3000:3000/tcp"
+      {
+        "WebUI": "3000:3000/tcp"
+      }
     ],
     "volumes": [
       {
@@ -1303,7 +1362,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "9117:9117/tcp"
+      {
+        "WebUI": "9117:9117/tcp"
+      }
     ],
     "volumes": [
       {
@@ -1324,7 +1385,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -1343,8 +1404,12 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8096:8096/tcp",
-      "8920:8920/tcp"
+      {
+        "WebUI": "8096:8096/tcp",
+        "HTTPS WebUI": "8920:8920/tcp",
+        "DNLA": "1900:1900/udp",
+        "Discovery": "7359:7359/udp"
+      }
     ],
     "volumes": [
       {
@@ -1369,7 +1434,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       },
       {
         "name": "TZ",
@@ -1390,8 +1455,11 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8080/tcp",
-      "9777/udp"
+      {
+        "WebUI": "8080/tcp",
+        "Websockets": "9090/tcp",
+        "esall": "9777:9777/udp"
+      }
     ],
     "volumes": [
       {
@@ -1408,7 +1476,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -1425,7 +1493,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "5299:5299/tcp"
+      {
+        "WebUI": "5299:5299/tcp"
+      }
     ],
     "volumes": [
       {
@@ -1447,7 +1517,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -1465,8 +1535,10 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "80/tcp",
-      "443/tcp"
+      {
+        "HTTP Proxy": "80/tcp",
+        "HTTPS Proxy": "443/tcp"
+      }
     ],
     "volumes": [
       {
@@ -1508,7 +1580,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       },
       {
         "name": "VALIDATION",
@@ -1536,7 +1608,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "80/tcp"
+      {
+        "WebUI": "80/tcp"
+      }
     ],
     "volumes": [
       {
@@ -1561,7 +1635,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "80/tcp"
+      {
+        "WebUI": "80/tcp"
+      }
     ],
     "volumes": [
       {
@@ -1582,7 +1658,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -1600,7 +1676,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "3306:3306/tcp"
+      {
+        "Database": "3306:3306/tcp"
+      }
     ],
     "volumes": [
       {
@@ -1617,7 +1695,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       },
       {
         "name": "MYSQL_ROOT_PASSWORD",
@@ -1639,8 +1717,10 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8080:8080/tcp",
-      "25565:25565/tcp"
+      {
+        "WebUI": "8080:8080/tcp",
+        "Minecraft": "25565:25565/tcp"
+      }
     ],
     "volumes": [
       {
@@ -1656,7 +1736,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -1674,7 +1754,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8081:8081/tcp"
+      {
+        "WebUI": "8081:8081/tcp"
+      }
     ],
     "volumes": [
       {
@@ -1699,7 +1781,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -1716,7 +1798,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "30000:30000/udp"
+      {
+        "Minetest": "30000:30000/udp"
+      }
     ],
     "volumes": [
       {
@@ -1732,7 +1816,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -1751,9 +1835,11 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8875:8875/tcp",
-      "554:554/tcp",
-      "1900:1900/udp"
+      {
+        "WebUI": "8875:8875/tcp",
+        "RSTP": "554:554/tcp",
+        "Discovery": "1900:1900/udp"
+      }
     ],
     "env": [
       {
@@ -1764,7 +1850,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -1782,7 +1868,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "3000:3000/tcp"
+      {
+        "WebUI": "3000:3000/tcp"
+      }
     ],
     "volumes": [
       {
@@ -1810,8 +1898,10 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "64738:64738/tcp",
-      "64738:64738/udp"
+      {
+        "Murmur TCP": "64738:64738/tcp",
+        "Murmur UDP": "64738:64738/udp"
+      }
     ],
     "volumes": [
       {
@@ -1840,7 +1930,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       },
       {
         "name": "TZ",
@@ -1863,7 +1953,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "5000:5000/tcp"
+      {
+        "WebUI": "5000:5000/tcp"
+      }
     ],
     "volumes": [
       {
@@ -1889,7 +1981,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -1909,7 +2001,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "80/tcp"
+      {
+        "WebUI": "80/tcp"
+      }
     ],
     "volumes": [
       {
@@ -1926,7 +2020,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -1944,7 +2038,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8090:8090/tcp"
+      {
+        "WebUI": "8090:8090/tcp"
+      }
     ],
     "volumes": [
       {
@@ -1969,7 +2065,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -1986,7 +2082,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "6789:6789/tcp"
+      {
+        "WebUI": "6789:6789/tcp"
+      }
     ],
     "volumes": [
       {
@@ -2007,7 +2105,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -2026,7 +2124,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "5076:5076/tcp"
+      {
+        "WebUI": "5076:5076/tcp"
+      }
     ],
     "volumes": [
       {
@@ -2047,7 +2147,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -2065,8 +2165,10 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "80/tcp",
-      "443/tcp"
+      {
+        "HTTP": "80/tcp",
+        "HTTPS": "443/tcp"
+      }
     ],
     "volumes": [
       {
@@ -2083,7 +2185,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -2101,9 +2203,11 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "80:8080/tcp",
-      "81:8181/tcp",
-      "443:4443/tcp"
+      {
+        "HTTP Proxy": "80:8080/tcp",
+        "WebUI": "81:8181/tcp",
+        "HTTPS Proxy": "443:4443/tcp"
+      }
     ],
     "volumes": [
       {
@@ -2125,8 +2229,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8888:8888/tcp",
-      "10000:10000/tcp"
+      {
+        "WebUI": "8888:8888/tcp"
+      }
     ],
     "volumes": [
       {
@@ -2143,7 +2248,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -2163,7 +2268,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "3579:3579/tcp"
+      {
+        "WebUI": "3579:3579/tcp"
+      }
     ],
     "volumes": [
       {
@@ -2180,7 +2287,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -2197,9 +2304,11 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "943:943/tcp",
-      "9443:9443/tcp",
-      "1194:1194/udp"
+      {
+        "WebUI": "943:943/tcp",
+        "VPN TCP": "9443:9443/tcp",
+        "VPN UDP": "1194:1194/udp"
+      }
     ],
     "volumes": [
       {
@@ -2221,7 +2330,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -2239,7 +2348,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "80/tcp"
+      {
+        "WebUI": "80/tcp"
+      }
     ],
     "volumes": [
       {
@@ -2256,7 +2367,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -2273,7 +2384,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "80/tcp"
+      {
+        "WebUI": "80/tcp"
+      }
     ],
     "volumes": [
       {
@@ -2298,7 +2411,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -2316,11 +2429,13 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "53:53/tcp",
-      "53:53/udp",
-      "67:67/udp",
-      "1010:80/tcp",
-      "4443:443/tcp"
+      {
+        "DNS TCP": "53:53/tcp",
+        "DNS UDP": "53:53/udp",
+        "DHCP": "67:67/udp",
+        "WebUI": "1010:80/tcp",
+        "HTTPS WebUI": "4443:443/tcp"
+      }
     ],
     "volumes": [
       {
@@ -2347,7 +2462,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "80/tcp"
+      {
+        "WebUI": "80/tcp"
+      }
     ],
     "volumes": [
       {
@@ -2364,7 +2481,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -2382,7 +2499,20 @@
     ],
     "platform": "linux",
     "restart_policy": "unless-stopped",
-    "network": "host",
+    "ports": [
+      {
+        "WebUI": "32400:32400/tcp",
+        "DNLA": "1900:1900/udp",
+        "Companion": "3005:3005/tcp",
+        "Bonjour/Avahi": "5353:5353/udp",
+        "Roku Control": "8324:8324/tcp",
+        "GDM-1": "32410:32410/udp",
+        "GDM-2": "32412:32412/udp",
+        "GDM-3": "32413:32413/udp",
+        "GDM-4": "32414:32414/udp",
+        "DNLA TCP": "32469:32469/udp"
+      }
+    ],
     "volumes": [
       {
         "container": "/config",
@@ -2406,7 +2536,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       },
       {
         "name": "VERSION",
@@ -2421,7 +2551,7 @@
     "name": "plexrequests",
     "description": "Simple automated way for users to request new content for Plex.",
     "logo": "https://raw.githubusercontent.com/linuxserver/beta-templates/master/lsiodev/img/plexrequests-icon.png",
-    "image": "linuxserver/plexrequests:latest",
+    "image": "lokenx/plexrequests-meteor:latest",
     "categories": [
       "Downloaders",
       "Other",
@@ -2431,7 +2561,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "3000:3000/tcp"
+      {
+        "WebUI": "3000:3000/tcp"
+      }
     ],
     "volumes": [
       {
@@ -2448,7 +2580,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       },
       {
         "name": "URL_BASE",
@@ -2473,7 +2605,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "80/tcp"
+      {
+        "WebUI": "80/tcp"
+      }
     ],
     "volumes": [
       {
@@ -2494,7 +2628,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -2515,8 +2649,10 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "143/tcp",
-      "25/tcp"
+      {
+        "POP3": "143/tcp",
+        "SMTP": "25/tcp"
+      }
     ],
     "volumes": [
       {
@@ -2539,7 +2675,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "443/tcp"
+      {
+        "WebUI": "443/tcp"
+      }
     ],
     "volumes": [
       {
@@ -2560,7 +2698,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -2577,7 +2715,10 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "4242:4242/tcp"
+      {
+        "IRC": "4242:4242/tcp",
+        "IDENT": "10113:10113/tcp"
+      }
     ],
     "volumes": [
       {
@@ -2594,7 +2735,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -2612,7 +2753,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "7878:7878/tcp"
+      {
+        "WebUI": "7878:7878/tcp"
+      }
     ],
     "volumes": [
       {
@@ -2637,7 +2780,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -2655,7 +2798,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "80/tcp"
+      {
+        "WebUI": "80/tcp"
+      }
     ],
     "volumes": [
       {
@@ -2701,7 +2846,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -2718,8 +2863,10 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8080:8080/tcp",
-      "9090:9090/tcp"
+      {
+        "WebUI": "8080:8080/tcp",
+        "HTTPS WebUI": "9090:9090/tcp"
+      }
     ],
     "volumes": [
       {
@@ -2744,7 +2891,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -2762,7 +2909,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8080/tcp"
+      {
+        "WebUI": "8080/tcp"
+      }
     ],
     "volumes": [
       {
@@ -2785,7 +2934,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8081:8081/tcp"
+      {
+        "WebUI": "8081:8081/tcp"
+      }
     ],
     "volumes": [
       {
@@ -2810,7 +2961,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -2828,7 +2979,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8081:8081/tcp"
+      {
+        "WebUI": "8081:8081/tcp"
+      }
     ],
     "volumes": [
       {
@@ -2853,7 +3006,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -2870,7 +3023,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "80/tcp"
+      {
+        "WebUI": "80/tcp"
+      }
     ],
     "volumes": [
       {
@@ -2891,7 +3046,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -2909,7 +3064,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8989:8989/tcp"
+      {
+        "WebUI": "8989:8989/tcp"
+      }
     ],
     "volumes": [
       {
@@ -2938,7 +3095,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -2958,9 +3115,11 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8384:8384/tcp",
-      "21027:21027/udp",
-      "22000:22000/tcp"
+      {
+        "WebUI": "8384:8384/tcp",
+        "Discovery": "21027:21027/udp",
+        "Listener": "22000:22000/tcp"
+      }
     ],
     "volumes": [
       {
@@ -2980,7 +3139,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -2998,7 +3157,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8181:8181/tcp"
+      {
+        "WebUI": "8181:8181/tcp"
+      }
     ],
     "volumes": [
       {
@@ -3019,7 +3180,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -3036,7 +3197,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "9000:9000/tcp"
+      {
+        "WebUI": "9000:9000/tcp"
+      }
     ],
     "volumes": [
       {
@@ -3053,7 +3216,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -3071,7 +3234,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8080:8080/tcp"
+      {
+        "WebUI": "8080:8080/tcp"
+      }
     ],
     "volumes": [
       {
@@ -3093,7 +3258,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "80/tcp"
+      {
+        "WebUI": "80/tcp"
+      }
     ],
     "volumes": [
       {
@@ -3110,7 +3277,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -3127,8 +3294,10 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "9091:9091/tcp",
-      "51413:51413/tcp"
+      {
+        "WebUI": "9091:9091/tcp",
+        "Torrent UDP": "51413:51413/tcp"
+      }
     ],
     "volumes": [
       {
@@ -3152,7 +3321,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -3172,7 +3341,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "9091:9091/tcp"
+      {
+        "WebUI": "9091:9091/tcp"
+      }
     ],
     "volumes": [
       {
@@ -3186,7 +3357,7 @@
     ],
     "sysctls": [
       {
-      "net.ipv6.conf.all.disable_ipv6": "0"
+        "net.ipv6.conf.all.disable_ipv6": "0"
       }
     ],
     "cap_add": [
@@ -3201,7 +3372,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       },
       {
         "name": "OPENVPN_PROVIDER",
@@ -3240,8 +3411,10 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "9981:9981/tcp",
-      "9982:9982/tcp"
+      {
+        "WebUI": "9981:9981/tcp",
+        "HTSP": "9982:9982/tcp"
+      }
     ],
     "volumes": [
       {
@@ -3261,7 +3434,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -3279,8 +3452,10 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "2202:2202/tcp",
-      "2203:2203/tcp"
+      {
+        "Library": "2202:2202/tcp",
+        "Admin": "2203:2203/tcp"
+      }
     ],
     "volumes": [
       {
@@ -3307,7 +3482,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -3325,14 +3500,16 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "3478:3478/udp",
-      "10001:10001/udp",
-      "8080:8080/tcp",
-      "8081:8081/tcp",
-      "8443:8443/tcp",
-      "8843:8843/tcp",
-      "8880:8880/tcp",
-      "6789:6789/tcp"
+      {
+        "STUN": "3478:3478/udp",
+        "AP discovery": "10001:10001/udp",
+        "Comunication": "8080:8080/tcp",
+        "WebUI": "8443:8443/tcp",
+        "Guest Portal HTTPS": "8843:8843/tcp",
+        "Guest Portal HTTP": "8880:8880/tcp",
+        "Throughput Test": "6789:6789/tcp",
+        "Rsyslog": "5514:5514/tcp"
+      }
     ],
     "volumes": [
       {
@@ -3349,7 +3526,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -3406,7 +3583,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -3424,7 +3601,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "5001:5000/tcp"
+      {
+        "WebUI": "5001:5000/tcp"
+      }
     ],
     "volumes": [
       {
@@ -3447,7 +3626,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "3100:3000/tcp"
+      {
+        "WebUI": "3100:3000/tcp"
+      }
     ],
     "volumes": [
       {
@@ -3474,7 +3655,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "17442:17442/tcp"
+      {
+        "WebUI": "17442:17442/tcp"
+      }
     ],
     "volumes": [
       {
@@ -3512,7 +3695,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "6501:6501/tcp"
+      {
+        "ZNC": "6501:6501/tcp"
+      }
     ],
     "volumes": [
       {
@@ -3529,7 +3714,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -3547,7 +3732,9 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "8686:8686/tcp"
+      {
+        "WebUI": "8686:8686/tcp"
+      }
     ],
     "volumes": [
       {
@@ -3572,7 +3759,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -3589,9 +3776,11 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "6881:6881/tcp",
-      "6881:6881/udp",
-      "8080:8080/tcp"
+      {
+        "Torrent UDP": "6881:6881/tcp",
+        "Torent TCP": "6881:6881/udp",
+        "WebUI": "8080:8080/tcp"
+      }
     ],
     "volumes": [
       {
@@ -3612,7 +3801,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   },
@@ -3629,9 +3818,12 @@
     "platform": "linux",
     "restart_policy": "unless-stopped",
     "ports": [
-      "80/tcp",
-      "51413:51413/tcp",
-      "6881:6881/udp"
+      {
+        "WebUI": "80/tcp",
+        "Torrent TCP": "51413:51413/tcp",
+        "Torrent UDP": "6881:6881/udp",
+        "SCGI": "5000:5000/tcp"
+      }
     ],
     "volumes": [
       {
@@ -3652,7 +3844,7 @@
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "100"
+        "default": "1000"
       }
     ]
   }
