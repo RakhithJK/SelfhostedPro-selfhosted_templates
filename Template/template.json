@@ -3847,5 +3847,119 @@
         "default": "1000"
       }
     ]
+  },
+  {
+    "type": 1,
+    "title": "Papermerge",
+    "name": "papermerge",
+    "description": "Papermerge is an open source document management system (DMS) primarily designed for archiving and retrieving your digital documents. Instead of having piles of paper documents all over your desk, office or drawers - you can quickly scan them and configure your scanner to directly upload to Papermerge DMS.",
+    "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-icon.png",
+    "image": "linuxserver/papermerge:latest",
+    "categories": [
+      "Documents"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      {
+        "WebUI": "8000:8000/tcp"
+      }
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "!config/Papermerge"
+      },
+      {
+        "container": "/downloads",
+        "bind": "!data/Papermerge"
+      }
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "1000"
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "1000"
+      },
+      {
+        "name": "TZ",
+        "label": "Timezone"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "SWAG",
+    "name": "swag",
+    "description": "SWAG - Secure Web Application Gateway (formerly known as letsencrypt, no relation to Let's Encrypt™) sets up an Nginx webserver and reverse proxy with php support and a built-in certbot client that automates free SSL server certificate generation and renewal processes. It also contains fail2ban for intrusion prevention.",
+    "logo": "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/swag.gif",
+    "image": "linuxserver/swag:latest",
+    "categories": [
+      "Tools",
+      "Web"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      {
+        "HTTP Proxy": "80/tcp",
+        "HTTPS Proxy": "443/tcp"
+      }
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "!config/SWAG"
+      }
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "1000"
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "1000"
+      },
+      {
+        "name": "TZ",
+        "label": "Timezone"
+      },
+      {
+        "name": "EMAIL",
+        "label": "EMAIL"
+      },
+      {
+        "name": "URL",
+        "label": "URL"
+      },
+      {
+        "name": "SUBDOMAINS",
+        "label": "SUBDOMAINS",
+        "default": "www"
+      },
+      {
+        "name": "ONLY_SUBDOMAINS",
+        "label": "ONLY_SUBDOMAINS",
+        "default": "false"
+      },
+
+      {
+        "name": "VALIDATION",
+        "label": "VALIDATION",
+        "default": "http"
+      },
+      {
+        "name": "DNSPLUGIN",
+        "label": "DNSPLUGIN"
+      }
+    ]
   }
 ]
