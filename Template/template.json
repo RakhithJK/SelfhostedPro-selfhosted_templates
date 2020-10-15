@@ -3488,7 +3488,7 @@
   },
   {
     "type": 1,
-    "title": "UniFi Controller",
+    "title": "\ Controller",
     "name": "unifi-controller",
     "description": null,
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/unifi-icon.png",
@@ -3502,7 +3502,7 @@
     "ports": [
       {
         "STUN": "3478:3478/udp",
-        "AP discovery": "!PUID1:!PUID1/udp",
+        "AP discovery": "10001:10001/udp",
         "Comunication": "8080:8080/tcp",
         "WebUI": "8443:8443/tcp",
         "Guest Portal HTTPS": "8843:8843/tcp",
