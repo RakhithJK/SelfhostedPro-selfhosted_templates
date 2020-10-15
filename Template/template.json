@@ -3488,7 +3488,7 @@
   },
   {
     "type": 1,
-    "title": "\ Controller",
+    "title": "Unifi Controller",
     "name": "unifi-controller",
     "description": null,
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/unifi-icon.png",
