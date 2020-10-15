@@ -42,12 +42,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       },
       {
         "name": "JAVA_OPTS",
@@ -177,12 +177,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       },
       {
         "name": "TZ",
@@ -225,12 +225,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -296,12 +296,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       },
       {
         "name": "CONTEXT_PATH",
@@ -342,12 +342,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -383,12 +383,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -419,12 +419,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -456,12 +456,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       },
       {
         "name": "CHEVERETO_DB_HOST",
@@ -537,12 +537,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "GUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "TZ",
@@ -596,12 +596,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -641,12 +641,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -676,12 +676,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -743,12 +743,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -808,12 +808,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       },
       {
         "name": "UMASK_SET",
@@ -852,12 +852,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -888,12 +888,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -937,12 +937,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -984,12 +984,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       },
       {
         "name": "TZ",
@@ -1054,12 +1054,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -1095,12 +1095,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -1159,12 +1159,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       },
       {
         "name": "TZ",
@@ -1201,12 +1201,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -1245,12 +1245,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -1284,12 +1284,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -1380,12 +1380,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -1429,12 +1429,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       },
       {
         "name": "TZ",
@@ -1471,12 +1471,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -1512,12 +1512,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -1575,12 +1575,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       },
       {
         "name": "VALIDATION",
@@ -1653,12 +1653,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -1690,12 +1690,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       },
       {
         "name": "MYSQL_ROOT_PASSWORD",
@@ -1731,12 +1731,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -1776,12 +1776,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -1811,12 +1811,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -1845,12 +1845,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -1925,12 +1925,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       },
       {
         "name": "TZ",
@@ -1976,12 +1976,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -2015,12 +2015,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -2060,12 +2060,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -2100,12 +2100,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -2142,12 +2142,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -2180,12 +2180,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -2243,12 +2243,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -2282,12 +2282,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -2325,12 +2325,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -2362,12 +2362,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -2406,12 +2406,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -2476,12 +2476,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -2531,12 +2531,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       },
       {
         "name": "VERSION",
@@ -2575,12 +2575,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       },
       {
         "name": "URL_BASE",
@@ -2623,12 +2623,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -2693,12 +2693,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -2730,12 +2730,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -2775,12 +2775,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -2841,12 +2841,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -2886,12 +2886,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -2956,12 +2956,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -3001,12 +3001,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -3041,12 +3041,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -3090,12 +3090,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -3134,12 +3134,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -3175,12 +3175,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -3211,12 +3211,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -3272,12 +3272,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -3316,12 +3316,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -3367,12 +3367,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       },
       {
         "name": "OPENVPN_PROVIDER",
@@ -3429,12 +3429,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -3477,12 +3477,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -3502,7 +3502,7 @@
     "ports": [
       {
         "STUN": "3478:3478/udp",
-        "AP discovery": "10001:10001/udp",
+        "AP discovery": "!PUID1:!PUID1/udp",
         "Comunication": "8080:8080/tcp",
         "WebUI": "8443:8443/tcp",
         "Guest Portal HTTPS": "8843:8843/tcp",
@@ -3521,12 +3521,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -3578,12 +3578,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -3709,12 +3709,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -3754,12 +3754,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -3796,12 +3796,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -3839,12 +3839,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       }
     ]
   },
@@ -3879,16 +3879,45 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       },
       {
         "name": "TZ",
         "label": "Timezone"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "GOPHISH",
+    "name": "gophish",
+    "description": "NOTE: Once you deploy your GoPhish instance, please navigate to the logs section in Portainer and acquire your 'admin' credentials for login. Gophish is an open-source phishing toolkit designed for businesses and penetration testers. It provides the ability to quickly and easily setup and execute phishing engagements and security awareness training.",
+    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/gophish.png",
+    "image": "gophish/gophish:latest",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "3333:3333/tcp"
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "!PUID"
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "100"
       }
     ]
   },
@@ -3921,12 +3950,12 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "1000"
+        "default": "!PUID"
       },
       {
         "name": "PGID",
         "label": "PGID",
-        "default": "1000"
+        "default": "!PGID"
       },
       {
         "name": "TZ",
