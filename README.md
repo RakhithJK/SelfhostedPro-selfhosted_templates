@@ -1,3 +1,7 @@
+### Notice:
+Currently most of my dev time is being spent on [Yacht](https://github.com/SelfhostedPro/Yacht/tree/vue) if you would like something added please consider making a pull request with your addition and I'll work on getting it added when I'm able to. Information about how to structure a block (for an app) is available [here](https://portainer.readthedocs.io/en/stable/templates.html)
+
+_portainer 2.0 templates are available [here](https://github.com/SelfhostedPro/selfhosted_templates/tree/portainer-2.0) in the portainer 2.0 branch. The Template URL is `https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/portainer-2.0/Template/template.json`._
 
 # Yacht Templates for Selfhosted Projects/Homelabs
 
@@ -17,7 +21,7 @@ This is a template focused on helping people spin up selfhosted services using P
 1. Login to your yacht web interface 
 2. Go to templates 
 3. Select Add Template
-3. Add the url: `https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/yacht/Template/template.json` then go to Apps and start deploying.
+3. Add the url: `https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/yacht-arm/Template/template.json` then go to Apps and start deploying.
 
 ### Information
 All templates are already configured to bind mount to various places on your drive. This branch works without the need for OMV. The following folders are all created in /portainer/
@@ -109,6 +113,7 @@ All templates are already configured to bind mount to various places on your dri
 - resilio-sync
 - rutorrent
 - sabnzbd
+- Seafile
 - sickchill
 - smokeping
 - sonarr
