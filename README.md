@@ -21,7 +21,7 @@ This is a template focused on helping people spin up selfhosted services using P
 1. Login to your yacht web interface 
 2. Go to templates 
 3. Select Add Template
-3. Add the url: `https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/yacht-arm/Template/template.json` then go to Apps and start deploying.
+3. Add the url: `https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/yacht-arm/Template/template.yml` then go to Apps and start deploying.
 
 ### Information
 All templates are already configured to bind mount to various places on your drive. This branch works without the need for OMV. The following folders are all created in /portainer/
