@@ -32,7 +32,7 @@ env:
     - name: JAVA_OPTS
       label: JAVA_OPTS
       default: "-Xms256m -Xmx512m"
----
+
 type: 1
 title: EmbyStat
 name: EmbyStat
@@ -49,7 +49,7 @@ volumes:
     - container: /config
       bind: "!config/EmbyStat"
 note: "Access the ui at your-ip:6555. Follow the setup wizard on initial install. Then configure the required services."
----
+
 type: 1
 title: Authelia
 name: authelia
@@ -72,7 +72,7 @@ env:
     name: TZ
     label: TZ
     default: "!TZ"
----
+
 type: 1
 title: Bazarr
 name: Bazarr
@@ -103,7 +103,7 @@ env:
     - name: TZ
       label: TZ
       default: "!TZ"
----
+
 type: 1
 title: Beets
 name: beets
@@ -130,7 +130,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: "Bitwarden RS"
 name: bitwardenrs
@@ -148,7 +148,7 @@ ports:
 volumes:
     - container: /config
       bind: "!config/Bitwarden-rs"
----
+
 type: 1
 title: Booksonic
 name: booksonic
@@ -178,7 +178,7 @@ env:
     - name: CONTEXT_PATH
       label: CONTEXT_PATH
       default: booksonic
----
+
 type: 1
 title: COPS
 name: cops
@@ -203,7 +203,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: "Calibre Web"
 name: calibre-web
@@ -228,7 +228,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: "Code Server"
 name: code-server
@@ -261,7 +261,7 @@ env:
 volumes:
     - container: /config
       bind: "!config/Code-Server"
----
+
 type: 1
 title: Codiad
 name: codiad
@@ -284,7 +284,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: CouchPotato
 name: couchpotato
@@ -311,7 +311,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: Daapd
 name: daapd
@@ -334,7 +334,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: DashMachine
 name: dashmachine
@@ -350,7 +350,7 @@ ports:
 volumes:
     - container: /dashmachine/dashmachine/user_data
       bind: "!config/Dashmachine"
----
+
 type: 1
 title: Davos
 name: davos
@@ -375,7 +375,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: DeeMix
 name: deemix
@@ -394,7 +394,7 @@ volumes:
     - container: /downloads
       bind: "!downloads"
 note: "Deemix may take a few minutes to install. Be sure to check the logs for details. Refer to <a href='https://notabug.org/RemixDevs/DeezloaderRemix/wiki/Login+via+userToken'>this page</a> for userToken details."
----
+
 type: 1
 title: Deluge
 namme: deluge
@@ -420,7 +420,7 @@ env:
     - name: UMASK_SET
       label: UMASK_SET
       default: "000"
----
+
 type: 1
 title: Domoticz
 name: domoticz
@@ -445,7 +445,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: "Duck DNS"
 name: duckdns
@@ -469,7 +469,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: Duplicati
 name: duplicati
@@ -495,7 +495,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: Emby
 name: Emby
@@ -526,7 +526,7 @@ env:
     - name: TZ
       label: TZ
       default: "!TZ"
----
+
 type: 1
 title: FileBrowser
 name: filebrowser
@@ -545,7 +545,7 @@ volumes:
       bind: "!config/FileBrowser"
     - container: /myfiles
       bind: "!config"
----
+
 type: 1
 title: FreshRSS
 name: freshrss
@@ -568,7 +568,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: Gazee
 name: gazee
@@ -593,7 +593,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: Guacamole
 name: guacamole
@@ -610,7 +610,7 @@ ports:
 volumes:
     - container: /config
       bind: "!config/Guacamole"
----
+
 type: 1
 title: Grocy
 name: grocy
@@ -635,7 +635,7 @@ env:
       default: "!PGID"
     - name: TZ
       label: Timezone
----
+
 type: 1
 title: "HTPC Manager"
 name: htpcmanager
@@ -658,7 +658,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: Headphones
 name: headphones
@@ -685,7 +685,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: Heimdall
 name: heimdall
@@ -709,7 +709,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: Homer
 name: homer
@@ -729,7 +729,7 @@ volumes:
     - container: /www/config.yml
       bind: "!config/Homer"
 
----
+
 type: 1
 title: Jackett
 name: jackett
@@ -754,7 +754,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: Jellyfin
 name: jellyfin
@@ -790,7 +790,7 @@ env:
       label: TZ
       default: "!TZ"
 
----
+
 type: 1
 title: LazyLibrarian
 name: lazylibrarian
@@ -814,7 +814,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: "Let's Encrypt"
 name: letsencrypt
@@ -859,7 +859,7 @@ env:
     - name: DNSPLUGIN
       label: DNSPLUGIN
       default: http
----
+
 type: 1
 title: LibreSpeed
 name: librespeed
@@ -876,7 +876,7 @@ ports:
 volumes:
     - container: /config
       bind: "!config/LibreSpeed"
----
+
 type: 1
 title: Lychee
 name: lychee
@@ -904,7 +904,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: MariaDB
 name: mariadb
@@ -932,7 +932,7 @@ env:
       label: MYSQL_ROOT_PASSWORD
       default: ""
 
----
+
 type: 1
 title: Medusa
 name: medusa
@@ -960,7 +960,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: Minetest
 name: minetest
@@ -982,7 +982,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: Minisatip
 name: minisatip
@@ -1006,7 +1006,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: Mstream
 name: mstream
@@ -1026,7 +1026,7 @@ volumes:
     - container: /music
       bind: "!downloads"
 
----
+
 type: 1
 title: MusicBrainz
 name: musicbrainz
@@ -1056,7 +1056,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: Muximux
 name: muximux
@@ -1082,7 +1082,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: Mylar
 name: mylar
@@ -1110,7 +1110,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: NZBGet
 name: nzbget
@@ -1135,7 +1135,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: "NZBHydra 2"
 name: nzbhydra2
@@ -1162,7 +1162,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: Nginx
 name: nginx
@@ -1188,7 +1188,7 @@ env:
       label: PGID
       default: "!PGID"
 
----
+
 type: 1
 title: OScam
 name: oscam
@@ -1211,7 +1211,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: Ombi
 name: ombi
@@ -1237,7 +1237,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: "OpenVPN ARM"
 name: openvpn-ARM
@@ -1265,7 +1265,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: "Organizr-ARM"
 name: organizr-ARM
@@ -1289,7 +1289,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: PhotoShow
 name: photoshow
@@ -1316,7 +1316,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: Pi-Hole
 name: pihole
@@ -1340,7 +1340,7 @@ volumes:
     - container: /etc/dnsmasq.d
       bind: "!config/PiHole/DNS"
 note: "When the installation is complete, navigate to your.ip.goes.here:1010/admin. Follow the article <a href='https://medium.com/@niktrix/getting-rid-of-systemd-resolved-consuming-port-53-605f0234f32f'>here</a> if you run into issues binding to port 53."
----
+
 type: 1
 title: Piwigo
 name: piwigo
@@ -1363,7 +1363,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: Plex
 name: plex
@@ -1404,7 +1404,7 @@ env:
     - name: VERSION
       label: VERSION
       default: latest
----
+
 type: 1
 title: ProjectSend
 name: projectsend
@@ -1432,7 +1432,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: "ProtonMail Bridge"
 name: protonmail-bridge
@@ -1453,7 +1453,7 @@ ports:
 volumes:
     - container: /root
       bind: "!config/ProtonMail-Bridge"
----
+
 type: 1
 title: Pydio
 name: pydio
@@ -1479,7 +1479,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: "Quassel IRC"
 name: quassel-core
@@ -1503,7 +1503,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: Radarr
 name: radarr
@@ -1532,7 +1532,7 @@ env:
       label: PGID
       default: "!PGID"
 
----
+
 type: 1
 title: SABnzbd
 name: sabnzbd
@@ -1560,7 +1560,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: Shiori
 name: shiori
@@ -1577,7 +1577,7 @@ ports:
 volumes:
     - container: /srv/shiori
       bind: "!config/Shiori"
----
+
 type: 1
 title: SickChill
 name: sickchill
@@ -1605,7 +1605,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: SickGear
 name: sickgear
@@ -1633,7 +1633,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: SmokePing
 name: smokeping
@@ -1658,7 +1658,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: Sonarr
 name: sonarr
@@ -1688,7 +1688,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: SyncThing
 name: syncthing
@@ -1717,7 +1717,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: Tautulli
 name: tautulli
@@ -1743,7 +1743,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: TheLounge
 name: thelounge
@@ -1766,7 +1766,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: TiddlyWiki
 name: tiddlywiki
@@ -1783,7 +1783,7 @@ ports:
 volumes:
     - container: /var/lib/tiddlywiki
       bind: "!config/TiddlyWiki"
----
+
 type: 1
 title: "Tiny Tiny RSS"
 name: tt-rss
@@ -1806,7 +1806,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: Transmission
 name: transmission
@@ -1834,7 +1834,7 @@ env:
       label: PGID
       default: "!PGID"
 
----
+
 type: 1
 title: Tvheadend
 name: tvheadend
@@ -1860,7 +1860,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: Ubooquity
 name: ubooquity
@@ -1889,7 +1889,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: "UniFi Controller"
 name: unifi-controller
@@ -1920,7 +1920,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: Watchtower
 name: watchtower
@@ -1937,7 +1937,7 @@ restart_policy: unless-stopped
 volumes:
     - container: /var/run/docker.sock
       bind: /var/run/docker.sock
----
+
 type: 1
 title: WebGrab+Plus
 name: webgrabplus
@@ -1960,7 +1960,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: Whoogle
 name: whoogle
@@ -1977,7 +1977,7 @@ ports:
 volumes:
     - container: /config
       bind: "!config/Whoogle"
----
+
 type: 1
 title: Wikijs
 name: Wikijs
@@ -1996,7 +1996,7 @@ volumes:
       bind: "!config/Wikijs"
     - container: /data
       bind: "!data/Wikijs"
----
+
 type: 1
 title: YouTubeDL-Material
 name: youtubedl-material
@@ -2021,7 +2021,7 @@ volumes:
       bind: "!config/Youtube/Users"
     - container: /app/audio
       bind: "!config/Youtube/Audio"
----
+
 type: 1
 title: ZNC
 name: znc
@@ -2044,7 +2044,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: lidarr
 name: lidarr
@@ -2072,7 +2072,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: qBittorrent
 name: qbittorrent
@@ -2099,7 +2099,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: ruTorrent
 name: rutorrent
@@ -2127,7 +2127,7 @@ env:
     - name: PGID
       label: PGID
       default: "!PGID"
----
+
 type: 1
 title: Papermerge
 name: papermerge
@@ -2154,7 +2154,7 @@ env:
       default: "!PGID"
     - name: TZ
       label: Timezone
----
+
 type: 1
 title: SWAG
 name: swag
