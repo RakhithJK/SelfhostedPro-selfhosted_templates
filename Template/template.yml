@@ -69,9 +69,9 @@
     - container: /etc/authelia/
     - bind: "!config/Authelia"
   env:
-    name: TZ
-    label: TZ
-    default: "!TZ"
+    - name: TZ
+      label: TZ
+      default: "!TZ"
 
 - type: 1
   title: Bazarr
