@@ -3185,6 +3185,50 @@
     ]
   },
   {
+  "type": 1,
+  "title": "Teamspeak",
+  "name": "teamspeak",
+  "description": "Teamspeak is a is a proprietary voice-over-Internet Protocol (VoIP) application for audio communication between users on a chat channel.",
+  "logo": "https://addons-content.teamspeak.com/943dd816-7ef2-48d7-82b8-d60c3b9b10b3/images/648_366/teamspeaklogo_5d00347a0cb48.png",
+  "image": "teamspeak",
+  "categories": [
+    "Voice",
+    "Chat"
+  ],
+  "platform": "linux",
+  "restart_policy": "unless-stopped",
+  "ports": [
+    {
+    "Voice": "9987:9987/udp",
+    "Filetransfer": "30033:30033/tcp",
+    "ServerQuery":"10011:10011/tcp"
+    }
+  ],
+  "volumes":[
+    {
+      "container": "/var/ts3server",
+      "bind": "!config/Teamspeak"
+    }
+  ],
+  "env": [
+    {
+      "name": "PUID",
+      "label": "PUID",
+      "default": "!PUID"
+    },
+    {
+      "name": "PGID",
+      "label": "PGID",
+      "default": "!PGID"
+    },
+    {
+      "name": "TS3SERVER_LICENSE",
+      "label": "TS3SERVER_LICENSE",
+      "default": "accept"
+    }
+  ]
+},
+  {
     "type": 1,
     "title": "TheLounge",
     "name": "thelounge",
