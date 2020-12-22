@@ -2491,7 +2491,7 @@
     "name": "plex",
     "description": "Your favorite movies, TV, music, web shows, podcasts, and more, all streamed to your favorite screens.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/plex-icon.png",
-    "image": "linuxserver/plex:latest",
+    "image": "plexinc/pms-docker",
     "categories": [
       "Video",
       "Music",
