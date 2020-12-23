@@ -3190,7 +3190,7 @@
   "name": "teamspeak",
   "description": "Teamspeak is a is a proprietary voice-over-Internet Protocol (VoIP) application for audio communication between users on a chat channel.",
   "logo": "https://addons-content.teamspeak.com/943dd816-7ef2-48d7-82b8-d60c3b9b10b3/images/648_366/teamspeaklogo_5d00347a0cb48.png",
-  "image": "mbentley/teamspeak",
+  "image": "teamspeak",
   "categories": [
     "Voice",
     "Chat"
