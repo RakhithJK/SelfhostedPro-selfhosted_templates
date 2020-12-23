@@ -1799,8 +1799,8 @@
     "restart_policy": "unless-stopped",
     "ports": [
       {
-        "Minecraft Server": "25565:25565/udp",
-        "WebUI": "8443/udp"
+        "Minecraft Server": "25565:25565/tcp",
+        "WebUI": "8443:8443/tcp"
       }
     ],
     "volumes": [
