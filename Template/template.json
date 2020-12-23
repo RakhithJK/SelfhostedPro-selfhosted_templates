@@ -1787,6 +1787,53 @@
   },
   {
     "type": 1,
+    "title": "MineOS",
+    "name": "mineos",
+    "description": "MineOS is a web-management dashboard designed to simplify Minecraft management ",
+    "logo": "https://camo.githubusercontent.com/bfcc53b6de495c0f2d9d5699afea18b7319529933c5cd38f1e0cf55377df725f/68747470733a2f2f7669676e65747465322e77696b69612e6e6f636f6f6b69652e6e65742f6c6f74722d6d696e6563726166742d6d6f642d6578696c65732f696d616765732f662f66322f4d696e6563726166745f7365727665725f73657475702e706e672f7265766973696f6e2f6c61746573743f63623d3230313630393131313732353537",
+    "image": "hexparrot/mineos",
+    "categories": [
+      "Other"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      {
+        "Minecraft Server": "25565:25565/udp",
+        "WebUI": "8443/udp"
+      }
+    ],
+    "volumes": [
+      {
+        "container": "/var/games/minecraft",
+        "bind": ""
+      }
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "!PUID"
+      },
+      {
+        "name": "USER_NAME",
+        "label": "USER_NAME",
+        "default": "admin"
+      },
+      {
+        "name": "USER_PASSWORD",
+        "label": "USER_PASSWORD",
+        "default": "admin"
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "!PGID"
+      }
+    ]
+  },
+  {
+    "type": 1,
     "title": "Minetest",
     "name": "minetest",
     "description": "Server version of minetest, a free, open source alternative to minecraft.",
