@@ -1154,17 +1154,8 @@
         "container": "/var/lib/grafana",
         "bind": "!config/Grafana"
       }
-    ],
-    "env": [
-      {
-        "name": "PUID",
-        "label": "PUID",
-        "default": "!PUID",
-        "name": "PGID",
-        "label": "PGID",
-        "default": "!PGID"
-      }
     ]
+    
   },
   {
     "type": 1,
