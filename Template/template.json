@@ -1155,7 +1155,7 @@
         "bind": "!config/Grafana"
       }
     ]
-    
+
   },
   {
     "type": 1,
@@ -2716,6 +2716,48 @@
       {
         "container": "/config",
         "bind": "!config/ProjectSend"
+      }
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "!PUID"
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "!PGID"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "Prometheus",
+    "name": "prometheus",
+    "description": "Prometheus is an application used for event monitoring and alerting.[ ",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Prometheus_software_logo.svg/1200px-Prometheus_software_logo.svg.png",
+    "image": "prom/prometheus",
+    "categories": [
+      "Cloud",
+      "Productivity",
+      "Tools",
+      "Other"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      {
+        "WebUI": "9090:9090/tcp"
+      }
+    ],
+    "volumes": [
+      {
+        "container": "/etc/prometheus",
+        "bind": "!config/Prometheus"
+      },
+      {
+
       }
     ],
     "env": [
