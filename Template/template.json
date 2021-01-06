@@ -1136,7 +1136,7 @@
     "name": "grafana",
     "description": "Grafana is a multi-platform open source analytics and interactive visualization web application. It provides charts, graphs, and alerts for the web when connected to supported data sources.",
     "logo": "https://logodix.com/logo/1736776.png",
-    "image": "linuxserver/Grafana:latest",
+    "image": "linuxserver/grafana:latest",
     "categories": [
       "Other",
       "Tools",
