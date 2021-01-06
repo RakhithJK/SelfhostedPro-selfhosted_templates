@@ -1160,7 +1160,7 @@
         "name": "PUID",
         "label": "PUID",
         "default": "!PUID"
-      },
+      }
     ]
   },
   {
