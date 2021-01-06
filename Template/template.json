@@ -2735,7 +2735,7 @@
     "type": 1,
     "title": "Prometheus",
     "name": "prometheus",
-    "description": "Prometheus is an application used for event monitoring and alerting.[ ",
+    "description": "Prometheus is an application used for event monitoring and alerting.",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Prometheus_software_logo.svg/1200px-Prometheus_software_logo.svg.png",
     "image": "prom/prometheus",
     "categories": [
@@ -2755,10 +2755,10 @@
       {
         "container": "/etc/prometheus",
         "bind": "!config/Prometheus"
-      },
-      {
-
       }
+
+
+      
     ],
     "env": [
       {
