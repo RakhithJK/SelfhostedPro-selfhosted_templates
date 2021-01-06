@@ -2173,7 +2173,7 @@
     "title": "Navidrome",
     "name": "navidrome",
     "description": "Navidrome is an open source web-based music collection server and streamer",
-    "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/nzbget-icon.png",
+    "logo": "https://api.cloudron.io/api/v1/apps/org.navidrome.cloudronapp/versions/1.2.0/icon",
     "image": "deluan/navidrome:latest",
     "categories": [
       "Music"
