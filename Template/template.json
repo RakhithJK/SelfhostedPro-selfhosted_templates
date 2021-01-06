@@ -1136,7 +1136,7 @@
     "name": "grafana",
     "description": "Grafana is a multi-platform open source analytics and interactive visualization web application. It provides charts, graphs, and alerts for the web when connected to supported data sources.",
     "logo": "https://logodix.com/logo/1736776.png",
-    "image": "linuxserver/grafana:latest",
+    "image": "grafana/grafana",
     "categories": [
       "Other",
       "Tools",
@@ -1159,7 +1159,10 @@
       {
         "name": "PUID",
         "label": "PUID",
-        "default": "!PUID"
+        "default": "!PUID",
+        "name": "PGID",
+        "label": "PGID",
+        "default": "!PGID"
       }
     ]
   },
