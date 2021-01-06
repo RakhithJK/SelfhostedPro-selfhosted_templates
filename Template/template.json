@@ -1132,6 +1132,39 @@
   },
   {
     "type": 1,
+    "title": "Grafana",
+    "name": "grafana",
+    "description": "Grafana is a multi-platform open source analytics and interactive visualization web application. It provides charts, graphs, and alerts for the web when connected to supported data sources.",
+    "logo": "https://logodix.com/logo/1736776.png",
+    "image": "linuxserver/Grafana:latest",
+    "categories": [
+      "Other",
+      "Tools",
+      "Web"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      {
+        "WebUI": "3001:3000/tcp"
+      }
+    ],
+    "volumes": [
+      {
+        "container": "/var/lib/grafana",
+        "bind": "!config/Grafana"
+      }
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "!PUID"
+      },
+    ]
+  },
+  {
+    "type": 1,
     "title": "Grocy",
     "name": "grocy",
     "description": "Grocy is an ERP system for your kitchen! Cut down on food waste, and manage your chores with this brilliant utulity.",
@@ -1345,6 +1378,31 @@
       {
         "container": "/var/lib/mysql",
         "bind": "!config/huginn"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "InfluxDB",
+    "name": "influxdb",
+    "description": "Store data points for Grafana",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Influxdb_logo.svg/1200px-Influxdb_logo.svg.png",
+    "image": "influxdb:latest",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      {
+        "WebUI": "8086:8086/tcp"
+      }
+    ],
+    "volumes": [
+      {
+        "container": "/var/lib/influxdb",
+        "bind": "!config/influxdb"
       }
     ]
   },
