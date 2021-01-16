@@ -767,7 +767,7 @@
     "restart_policy": "unless-stopped",
     "ports": [
       {
-        "WebUI": "9666:9666/tcp"
+        "WebUI": "6595:6595/tcp"
       }
     ],
     "volumes": [
@@ -1132,6 +1132,33 @@
   },
   {
     "type": 1,
+    "title": "Grafana",
+    "name": "grafana",
+    "description": "Grafana is a multi-platform open source analytics and interactive visualization web application. It provides charts, graphs, and alerts for the web when connected to supported data sources.",
+    "logo": "https://logodix.com/logo/1736776.png",
+    "image": "grafana/grafana",
+    "categories": [
+      "Other",
+      "Tools",
+      "Web"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      {
+        "WebUI": "3001:3000/tcp"
+      }
+    ],
+    "volumes": [
+      {
+        "container": "/var/lib/grafana",
+        "bind": "!config/Grafana"
+      }
+    ]
+
+  },
+  {
+    "type": 1,
     "title": "Grocy",
     "name": "grocy",
     "description": "Grocy is an ERP system for your kitchen! Cut down on food waste, and manage your chores with this brilliant utulity.",
@@ -1345,6 +1372,31 @@
       {
         "container": "/var/lib/mysql",
         "bind": "!config/huginn"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "InfluxDB",
+    "name": "influxdb",
+    "description": "Store data points for Grafana",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Influxdb_logo.svg/1200px-Influxdb_logo.svg.png",
+    "image": "influxdb:latest",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      {
+        "WebUI": "8086:8086/tcp"
+      }
+    ],
+    "volumes": [
+      {
+        "container": "/var/lib/influxdb",
+        "bind": "!config/influxdb"
       }
     ]
   },
@@ -1787,6 +1839,53 @@
   },
   {
     "type": 1,
+    "title": "MineOS",
+    "name": "mineos",
+    "description": "MineOS is a web-management dashboard designed to simplify Minecraft management ",
+    "logo": "https://camo.githubusercontent.com/bfcc53b6de495c0f2d9d5699afea18b7319529933c5cd38f1e0cf55377df725f/68747470733a2f2f7669676e65747465322e77696b69612e6e6f636f6f6b69652e6e65742f6c6f74722d6d696e6563726166742d6d6f642d6578696c65732f696d616765732f662f66322f4d696e6563726166745f7365727665725f73657475702e706e672f7265766973696f6e2f6c61746573743f63623d3230313630393131313732353537",
+    "image": "hexparrot/mineos",
+    "categories": [
+      "Other"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      {
+        "Minecraft Server": "25565:25565/tcp",
+        "WebUI": "8443:8443/tcp"
+      }
+    ],
+    "volumes": [
+      {
+        "container": "/var/games/minecraft",
+        "bind": ""
+      }
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "!PUID"
+      },
+      {
+        "name": "USER_NAME",
+        "label": "USER_NAME",
+        "default": "admin"
+      },
+      {
+        "name": "USER_PASSWORD",
+        "label": "USER_PASSWORD",
+        "default": "admin"
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "!PGID"
+      }
+    ]
+  },
+  {
+    "type": 1,
     "title": "Minetest",
     "name": "minetest",
     "description": "Server version of minetest, a free, open source alternative to minecraft.",
@@ -2054,6 +2153,46 @@
       {
         "container": "/comics",
         "bind": "!comics"
+      }
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "!PUID"
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "!PGID"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "Navidrome",
+    "name": "navidrome",
+    "description": "Navidrome is an open source web-based music collection server and streamer",
+    "logo": "https://api.cloudron.io/api/v1/apps/org.navidrome.cloudronapp/versions/1.2.0/icon",
+    "image": "deluan/navidrome:latest",
+    "categories": [
+      "Music"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      {
+        "WebUI": "4533:4533/tcp"
+      }
+    ],
+    "volumes": [
+      {
+        "container": "/data",
+        "bind": "!Data"
+      },
+      {
+        "container": "/music",
+        "bind": "!Music"
       }
     ],
     "env": [
@@ -2491,7 +2630,7 @@
     "name": "plex",
     "description": "Your favorite movies, TV, music, web shows, podcasts, and more, all streamed to your favorite screens.",
     "logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/plex-icon.png",
-    "image": "linuxserver/plex:latest",
+    "image": "plexinc/pms-docker",
     "categories": [
       "Video",
       "Music",
@@ -2618,6 +2757,48 @@
         "container": "/config",
         "bind": "!config/ProjectSend"
       }
+    ],
+    "env": [
+      {
+        "name": "PUID",
+        "label": "PUID",
+        "default": "!PUID"
+      },
+      {
+        "name": "PGID",
+        "label": "PGID",
+        "default": "!PGID"
+      }
+    ]
+  },
+  {
+    "type": 1,
+    "title": "Prometheus",
+    "name": "prometheus",
+    "description": "Prometheus is an application used for event monitoring and alerting.",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Prometheus_software_logo.svg/1200px-Prometheus_software_logo.svg.png",
+    "image": "prom/prometheus",
+    "categories": [
+      "Cloud",
+      "Productivity",
+      "Tools",
+      "Other"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      {
+        "WebUI": "9090:9090/tcp"
+      }
+    ],
+    "volumes": [
+      {
+        "container": "/etc/prometheus",
+        "bind": "!config/Prometheus"
+      }
+
+
+
     ],
     "env": [
       {
@@ -3185,6 +3366,50 @@
     ]
   },
   {
+  "type": 1,
+  "title": "Teamspeak",
+  "name": "teamspeak",
+  "description": "Teamspeak is a is a proprietary voice-over-Internet Protocol (VoIP) application for audio communication between users on a chat channel.",
+  "logo": "https://addons-content.teamspeak.com/943dd816-7ef2-48d7-82b8-d60c3b9b10b3/images/648_366/teamspeaklogo_5d00347a0cb48.png",
+  "image": "teamspeak",
+  "categories": [
+    "Voice",
+    "Chat"
+  ],
+  "platform": "linux",
+  "restart_policy": "unless-stopped",
+  "ports": [
+    {
+    "Voice": "9987:9987/udp",
+    "Filetransfer": "30033:30033/tcp",
+    "ServerQuery":"10011:10011/tcp"
+    }
+  ],
+  "volumes":[
+    {
+      "container": "/var/ts3server",
+      "bind": "!config/Teamspeak"
+    }
+  ],
+  "env": [
+    {
+      "name": "PUID",
+      "label": "PUID",
+      "default": "!PUID"
+    },
+    {
+      "name": "PGID",
+      "label": "PGID",
+      "default": "!PGID"
+    },
+    {
+      "name": "TS3SERVER_LICENSE",
+      "label": "TS3SERVER_LICENSE",
+      "default": "accept"
+    }
+  ]
+},
+  {
     "type": 1,
     "title": "TheLounge",
     "name": "thelounge",
@@ -3379,6 +3604,11 @@
         "label": "OPENVPN_PROVIDER",
         "description": "https://haugene.github.io/docker-transmission-openvpn/supported-providers/",
         "default": "MULLVAD"
+      },
+      {
+        "name": "OPENVPN_CONFIG",
+        "label": "OPENVPN_CONFIG",
+        "default": ""
       },
       {
         "name": "OPENVPN_USERNAME",
